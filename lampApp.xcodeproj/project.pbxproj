@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C970F21BE52B5C00C3AB7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F11BE52B5C00C3AB7A /* main.m */; };
+		18C970F51BE52B5C00C3AB7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F41BE52B5C00C3AB7A /* AppDelegate.m */; };
+		18C970F81BE52B5C00C3AB7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F71BE52B5C00C3AB7A /* ViewController.m */; };
+		18C970FB1BE52B5C00C3AB7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C970F91BE52B5C00C3AB7A /* Main.storyboard */; };
+		18C970FD1BE52B5C00C3AB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C970FC1BE52B5C00C3AB7A /* Assets.xcassets */; };
+		18C971001BE52B5C00C3AB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C970FE1BE52B5C00C3AB7A /* LaunchScreen.storyboard */; };
+		18C9710B1BE52B5C00C3AB7A /* lampAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9710A1BE52B5C00C3AB7A /* lampAppTests.m */; };
+		18C971161BE52B5C00C3AB7A /* lampAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971151BE52B5C00C3AB7A /* lampAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C971071BE52B5C00C3AB7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C970E51BE52B5C00C3AB7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C970EC1BE52B5C00C3AB7A;
+			remoteInfo = lampApp;
+		};
+		18C971121BE52B5C00C3AB7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C970E51BE52B5C00C3AB7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C970EC1BE52B5C00C3AB7A;
+			remoteInfo = lampApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C970ED1BE52B5C00C3AB7A /* lampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C970F11BE52B5C00C3AB7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18C970F31BE52B5C00C3AB7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18C970F41BE52B5C00C3AB7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18C970F61BE52B5C00C3AB7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18C970F71BE52B5C00C3AB7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18C970FA1BE52B5C00C3AB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18C970FC1BE52B5C00C3AB7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18C970FF1BE52B5C00C3AB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18C971011BE52B5C00C3AB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C971061BE52B5C00C3AB7A /* lampAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lampAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C9710A1BE52B5C00C3AB7A /* lampAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lampAppTests.m; sourceTree = "<group>"; };
+		18C9710C1BE52B5C00C3AB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C971111BE52B5C00C3AB7A /* lampAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lampAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C971151BE52B5C00C3AB7A /* lampAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lampAppUITests.m; sourceTree = "<group>"; };
+		18C971171BE52B5C00C3AB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C970EA1BE52B5C00C3AB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C971031BE52B5C00C3AB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C9710E1BE52B5C00C3AB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C970E41BE52B5C00C3AB7A = {
+			isa = PBXGroup;
+			children = (
+				18C970EF1BE52B5C00C3AB7A /* lampApp */,
+				18C971091BE52B5C00C3AB7A /* lampAppTests */,
+				18C971141BE52B5C00C3AB7A /* lampAppUITests */,
+				18C970EE1BE52B5C00C3AB7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C970EE1BE52B5C00C3AB7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C970ED1BE52B5C00C3AB7A /* lampApp.app */,
+				18C971061BE52B5C00C3AB7A /* lampAppTests.xctest */,
+				18C971111BE52B5C00C3AB7A /* lampAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C970EF1BE52B5C00C3AB7A /* lampApp */ = {
+			isa = PBXGroup;
+			children = (
+				18C970F31BE52B5C00C3AB7A /* AppDelegate.h */,
+				18C970F41BE52B5C00C3AB7A /* AppDelegate.m */,
+				18C970F61BE52B5C00C3AB7A /* ViewController.h */,
+				18C970F71BE52B5C00C3AB7A /* ViewController.m */,
+				18C970F91BE52B5C00C3AB7A /* Main.storyboard */,
+				18C970FC1BE52B5C00C3AB7A /* Assets.xcassets */,
+				18C970FE1BE52B5C00C3AB7A /* LaunchScreen.storyboard */,
+				18C971011BE52B5C00C3AB7A /* Info.plist */,
+				18C970F01BE52B5C00C3AB7A /* Supporting Files */,
+			);
+			path = lampApp;
+			sourceTree = "<group>";
+		};
+		18C970F01BE52B5C00C3AB7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18C970F11BE52B5C00C3AB7A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18C971091BE52B5C00C3AB7A /* lampAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C9710A1BE52B5C00C3AB7A /* lampAppTests.m */,
+				18C9710C1BE52B5C00C3AB7A /* Info.plist */,
+			);
+			path = lampAppTests;
+			sourceTree = "<group>";
+		};
+		18C971141BE52B5C00C3AB7A /* lampAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18C971151BE52B5C00C3AB7A /* lampAppUITests.m */,
+				18C971171BE52B5C00C3AB7A /* Info.plist */,
+			);
+			path = lampAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C970EC1BE52B5C00C3AB7A /* lampApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C9711A1BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampApp" */;
+			buildPhases = (
+				18C970E91BE52B5C00C3AB7A /* Sources */,
+				18C970EA1BE52B5C00C3AB7A /* Frameworks */,
+				18C970EB1BE52B5C00C3AB7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lampApp;
+			productName = lampApp;
+			productReference = 18C970ED1BE52B5C00C3AB7A /* lampApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18C971051BE52B5C00C3AB7A /* lampAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C9711D1BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampAppTests" */;
+			buildPhases = (
+				18C971021BE52B5C00C3AB7A /* Sources */,
+				18C971031BE52B5C00C3AB7A /* Frameworks */,
+				18C971041BE52B5C00C3AB7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C971081BE52B5C00C3AB7A /* PBXTargetDependency */,
+			);
+			name = lampAppTests;
+			productName = lampAppTests;
+			productReference = 18C971061BE52B5C00C3AB7A /* lampAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18C971101BE52B5C00C3AB7A /* lampAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C971201BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampAppUITests" */;
+			buildPhases = (
+				18C9710D1BE52B5C00C3AB7A /* Sources */,
+				18C9710E1BE52B5C00C3AB7A /* Frameworks */,
+				18C9710F1BE52B5C00C3AB7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C971131BE52B5C00C3AB7A /* PBXTargetDependency */,
+			);
+			name = lampAppUITests;
+			productName = lampAppUITests;
+			productReference = 18C971111BE52B5C00C3AB7A /* lampAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C970E51BE52B5C00C3AB7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = anan;
+				TargetAttributes = {
+					18C970EC1BE52B5C00C3AB7A = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = L99SQH8RCV;
+					};
+					18C971051BE52B5C00C3AB7A = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = L99SQH8RCV;
+						TestTargetID = 18C970EC1BE52B5C00C3AB7A;
+					};
+					18C971101BE52B5C00C3AB7A = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = L99SQH8RCV;
+						TestTargetID = 18C970EC1BE52B5C00C3AB7A;
+					};
+				};
+			};
+			buildConfigurationList = 18C970E81BE52B5C00C3AB7A /* Build configuration list for PBXProject "lampApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C970E41BE52B5C00C3AB7A;
+			productRefGroup = 18C970EE1BE52B5C00C3AB7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C970EC1BE52B5C00C3AB7A /* lampApp */,
+				18C971051BE52B5C00C3AB7A /* lampAppTests */,
+				18C971101BE52B5C00C3AB7A /* lampAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C970EB1BE52B5C00C3AB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C971001BE52B5C00C3AB7A /* LaunchScreen.storyboard in Resources */,
+				18C970FD1BE52B5C00C3AB7A /* Assets.xcassets in Resources */,
+				18C970FB1BE52B5C00C3AB7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C971041BE52B5C00C3AB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C9710F1BE52B5C00C3AB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C970E91BE52B5C00C3AB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C970F81BE52B5C00C3AB7A /* ViewController.m in Sources */,
+				18C970F51BE52B5C00C3AB7A /* AppDelegate.m in Sources */,
+				18C970F21BE52B5C00C3AB7A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C971021BE52B5C00C3AB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C9710B1BE52B5C00C3AB7A /* lampAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C9710D1BE52B5C00C3AB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C971161BE52B5C00C3AB7A /* lampAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C971081BE52B5C00C3AB7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C970EC1BE52B5C00C3AB7A /* lampApp */;
+			targetProxy = 18C971071BE52B5C00C3AB7A /* PBXContainerItemProxy */;
+		};
+		18C971131BE52B5C00C3AB7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C970EC1BE52B5C00C3AB7A /* lampApp */;
+			targetProxy = 18C971121BE52B5C00C3AB7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18C970F91BE52B5C00C3AB7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C970FA1BE52B5C00C3AB7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18C970FE1BE52B5C00C3AB7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C970FF1BE52B5C00C3AB7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C971181BE52B5C00C3AB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18C971191BE52B5C00C3AB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C9711B1BE52B5C00C3AB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = lampApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18C9711C1BE52B5C00C3AB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = lampApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18C9711E1BE52B5C00C3AB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = lampAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lampApp.app/lampApp";
+			};
+			name = Debug;
+		};
+		18C9711F1BE52B5C00C3AB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = lampAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lampApp.app/lampApp";
+			};
+			name = Release;
+		};
+		18C971211BE52B5C00C3AB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = lampAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = lampApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		18C971221BE52B5C00C3AB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = lampAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = lampApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C970E81BE52B5C00C3AB7A /* Build configuration list for PBXProject "lampApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C971181BE52B5C00C3AB7A /* Debug */,
+				18C971191BE52B5C00C3AB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C9711A1BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C9711B1BE52B5C00C3AB7A /* Debug */,
+				18C9711C1BE52B5C00C3AB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18C9711D1BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C9711E1BE52B5C00C3AB7A /* Debug */,
+				18C9711F1BE52B5C00C3AB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18C971201BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C971211BE52B5C00C3AB7A /* Debug */,
+				18C971221BE52B5C00C3AB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18C970E51BE52B5C00C3AB7A /* Project object */;
+}
