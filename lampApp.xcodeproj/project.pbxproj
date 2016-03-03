@@ -7,14 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062F1D061C02EA9600D37589 /* CWLAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 062F1D051C02EA9600D37589 /* CWLAlert.m */; };
+		062F1D0A1C02EB0E00D37589 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 062F1D091C02EB0E00D37589 /* MBProgressHUD.m */; };
+		062F1D101C02FEAF00D37589 /* EquipmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 062F1D0F1C02FEAF00D37589 /* EquipmentCell.m */; };
+		062F1D131C0309E500D37589 /* DataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 062F1D121C0309E500D37589 /* DataStorage.m */; };
+		189A38301BE64E30006EFD78 /* RegisteredVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A382F1BE64E30006EFD78 /* RegisteredVC.m */; };
+		189A38331BE65520006EFD78 /* RegistereConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A38321BE65520006EFD78 /* RegistereConfirmVC.m */; };
 		18C970F21BE52B5C00C3AB7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F11BE52B5C00C3AB7A /* main.m */; };
-		18C970F51BE52B5C00C3AB7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F41BE52B5C00C3AB7A /* AppDelegate.m */; };
-		18C970F81BE52B5C00C3AB7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C970F71BE52B5C00C3AB7A /* ViewController.m */; };
 		18C970FB1BE52B5C00C3AB7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C970F91BE52B5C00C3AB7A /* Main.storyboard */; };
 		18C970FD1BE52B5C00C3AB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C970FC1BE52B5C00C3AB7A /* Assets.xcassets */; };
 		18C971001BE52B5C00C3AB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C970FE1BE52B5C00C3AB7A /* LaunchScreen.storyboard */; };
 		18C9710B1BE52B5C00C3AB7A /* lampAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9710A1BE52B5C00C3AB7A /* lampAppTests.m */; };
 		18C971161BE52B5C00C3AB7A /* lampAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971151BE52B5C00C3AB7A /* lampAppUITests.m */; };
+		18C9718C1BE52CF400C3AB7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971281BE52CF400C3AB7A /* AppDelegate.m */; };
+		18C9718D1BE52CF400C3AB7A /* HomeTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9712A1BE52CF400C3AB7A /* HomeTabBarVC.m */; };
+		18C9718E1BE52CF400C3AB7A /* UIViewController+Transit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9712C1BE52CF400C3AB7A /* UIViewController+Transit.m */; };
+		18C9718F1BE52CF400C3AB7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9712E1BE52CF400C3AB7A /* ViewController.m */; };
+		18C971B21BE52CF400C3AB7A /* ControlsToCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971871BE52CF400C3AB7A /* ControlsToCreate.m */; };
+		18C971B31BE52CF400C3AB7A /* CWLtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971891BE52CF400C3AB7A /* CWLtool.m */; };
+		18C971B41BE52CF400C3AB7A /* UIView+Auxiliary.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9718B1BE52CF400C3AB7A /* UIView+Auxiliary.m */; };
+		18C971BE1BE5319D00C3AB7A /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971BD1BE5319D00C3AB7A /* LoginVC.m */; };
+		18C971C11BE531B700C3AB7A /* PersonalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971C01BE531B700C3AB7A /* PersonalVC.m */; };
+		18C971C41BE531CD00C3AB7A /* FoundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C971C31BE531CD00C3AB7A /* FoundVC.m */; };
+		3102F9E81C0041E000C04535 /* 调色板.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9E71C0041E000C04535 /* 调色板.png */; };
+		3102F9EB1C00446300C04535 /* CwlEncapsulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102F9EA1C00446300C04535 /* CwlEncapsulation.m */; };
+		3102FA331C00491B00C04535 /* 安防盾.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9EC1C00491B00C04535 /* 安防盾.png */; };
+		3102FA341C00491B00C04535 /* 白.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9ED1C00491B00C04535 /* 白.png */; };
+		3102FA351C00491B00C04535 /* 备注.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9EE1C00491B00C04535 /* 备注.png */; };
+		3102FA361C00491B00C04535 /* 插座.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9EF1C00491B00C04535 /* 插座.png */; };
+		3102FA371C00491B00C04535 /* 灯.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F01C00491B00C04535 /* 灯.png */; };
+		3102FA381C00491B00C04535 /* 灯2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F11C00491B00C04535 /* 灯2.png */; };
+		3102FA391C00491B00C04535 /* 灯3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F21C00491B00C04535 /* 灯3.png */; };
+		3102FA3A1C00491B00C04535 /* 灯小图.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F31C00491B00C04535 /* 灯小图.png */; };
+		3102FA3B1C00491B00C04535 /* 登录1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F41C00491B00C04535 /* 登录1.png */; };
+		3102FA3C1C00491B00C04535 /* 登录2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F51C00491B00C04535 /* 登录2.png */; };
+		3102FA3D1C00491B00C04535 /* 登录3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F61C00491B00C04535 /* 登录3.png */; };
+		3102FA3E1C00491B00C04535 /* 定时任务.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F71C00491B00C04535 /* 定时任务.png */; };
+		3102FA3F1C00491B00C04535 /* 发现.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F81C00491B00C04535 /* 发现.png */; };
+		3102FA401C00491B00C04535 /* 发现1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9F91C00491B00C04535 /* 发现1.png */; };
+		3102FA411C00491B00C04535 /* 发现2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9FA1C00491B00C04535 /* 发现2.png */; };
+		3102FA421C00491B00C04535 /* 返回.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9FB1C00491B00C04535 /* 返回.png */; };
+		3102FA431C00491B00C04535 /* 房门.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9FC1C00491B00C04535 /* 房门.png */; };
+		3102FA441C00491B00C04535 /* 红.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9FD1C00491B00C04535 /* 红.png */; };
+		3102FA451C00491B00C04535 /* 滑钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9FE1C00491B00C04535 /* 滑钮.png */; };
+		3102FA461C00491B00C04535 /* 滑钮2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102F9FF1C00491B00C04535 /* 滑钮2.png */; };
+		3102FA471C00491B00C04535 /* 获取验证码.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA001C00491B00C04535 /* 获取验证码.png */; };
+		3102FA481C00491B00C04535 /* 渐变.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA011C00491B00C04535 /* 渐变.png */; };
+		3102FA491C00491B00C04535 /* 开关.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA021C00491B00C04535 /* 开关.png */; };
+		3102FA4A1C00491B00C04535 /* 开机页面.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA031C00491B00C04535 /* 开机页面.png */; };
+		3102FA4B1C00491B00C04535 /* 开启与关闭.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA041C00491B00C04535 /* 开启与关闭.png */; };
+		3102FA4C1C00491B00C04535 /* 蓝.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA051C00491B00C04535 /* 蓝.png */; };
+		3102FA4D1C00491B00C04535 /* 亮度.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA061C00491B00C04535 /* 亮度.png */; };
+		3102FA4E1C00491B00C04535 /* 绿.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA071C00491B00C04535 /* 绿.png */; };
+		3102FA4F1C00491B00C04535 /* 密码1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA081C00491B00C04535 /* 密码1.png */; };
+		3102FA501C00491B00C04535 /* 昵称.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA091C00491B00C04535 /* 昵称.png */; };
+		3102FA511C00491B00C04535 /* 取消.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA0A1C00491B00C04535 /* 取消.png */; };
+		3102FA521C00491B00C04535 /* 确认.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA0B1C00491B00C04535 /* 确认.png */; };
+		3102FA531C00491B00C04535 /* 任性渐变.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA0C1C00491B00C04535 /* 任性渐变.png */; };
+		3102FA541C00491B00C04535 /* 任性闪耀.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA0D1C00491B00C04535 /* 任性闪耀.png */; };
+		3102FA551C00491B00C04535 /* 删除.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA0E1C00491B00C04535 /* 删除.png */; };
+		3102FA561C00491B00C04535 /* 删除2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA0F1C00491B00C04535 /* 删除2.png */; };
+		3102FA571C00491B00C04535 /* 闪耀.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA101C00491B00C04535 /* 闪耀.png */; };
+		3102FA581C00491B00C04535 /* 设备.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA111C00491B00C04535 /* 设备.png */; };
+		3102FA591C00491B00C04535 /* 设备1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA121C00491B00C04535 /* 设备1.png */; };
+		3102FA5A1C00491B00C04535 /* 设备2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA131C00491B00C04535 /* 设备2.png */; };
+		3102FA5B1C00491B00C04535 /* 设备信息.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA141C00491B00C04535 /* 设备信息.png */; };
+		3102FA5C1C00491B00C04535 /* 设置密码.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA151C00491B00C04535 /* 设置密码.png */; };
+		3102FA5D1C00491B00C04535 /* 设置密码1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA161C00491B00C04535 /* 设置密码1.png */; };
+		3102FA5E1C00491B00C04535 /* 手机号码1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA171C00491B00C04535 /* 手机号码1.png */; };
+		3102FA5F1C00491B00C04535 /* 输入密码.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA181C00491B00C04535 /* 输入密码.png */; };
+		3102FA601C00491B00C04535 /* 速度.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA191C00491B00C04535 /* 速度.png */; };
+		3102FA611C00491B00C04535 /* 锁.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA1A1C00491B00C04535 /* 锁.png */; };
+		3102FA621C00491B00C04535 /* 锁2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA1B1C00491B00C04535 /* 锁2.png */; };
+		3102FA631C00491B00C04535 /* 锁3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA1C1C00491B00C04535 /* 锁3.png */; };
+		3102FA641C00491B00C04535 /* 添加按键1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA1D1C00491B00C04535 /* 添加按键1.png */; };
+		3102FA651C00491B00C04535 /* 添加按键2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA1E1C00491B00C04535 /* 添加按键2.png */; };
+		3102FA661C00491B00C04535 /* 添加延时.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA1F1C00491B00C04535 /* 添加延时.png */; };
+		3102FA671C00491B00C04535 /* 添加延时1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA201C00491B00C04535 /* 添加延时1.png */; };
+		3102FA681C00491B00C04535 /* 忘记密码.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA211C00491B00C04535 /* 忘记密码.png */; };
+		3102FA691C00491B00C04535 /* 我.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA221C00491B00C04535 /* 我.png */; };
+		3102FA6A1C00491B00C04535 /* 我1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA231C00491B00C04535 /* 我1.png */; };
+		3102FA6B1C00491B00C04535 /* 我2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA241C00491B00C04535 /* 我2.png */; };
+		3102FA6C1C00491B00C04535 /* 下一步.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA251C00491B00C04535 /* 下一步.png */; };
+		3102FA6D1C00491B00C04535 /* 修改名称.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA261C00491B00C04535 /* 修改名称.png */; };
+		3102FA6E1C00491B00C04535 /* 延时任务.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA271C00491B00C04535 /* 延时任务.png */; };
+		3102FA6F1C00491B00C04535 /* 移动.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA281C00491B00C04535 /* 移动.png */; };
+		3102FA701C00491B00C04535 /* 用户列表.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA291C00491B00C04535 /* 用户列表.png */; };
+		3102FA711C00491B00C04535 /* 用户名1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA2A1C00491B00C04535 /* 用户名1.png */; };
+		3102FA721C00491B00C04535 /* 右列表.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA2B1C00491B00C04535 /* 右列表.png */; };
+		3102FA731C00491B00C04535 /* 再输入密码.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA2C1C00491B00C04535 /* 再输入密码.png */; };
+		3102FA741C00491B00C04535 /* 智能灯1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA2D1C00491B00C04535 /* 智能灯1.png */; };
+		3102FA751C00491B00C04535 /* 智能灯2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA2E1C00491B00C04535 /* 智能灯2.png */; };
+		3102FA761C00491B00C04535 /* 智能灯3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA2F1C00491B00C04535 /* 智能灯3.png */; };
+		3102FA771C00491B00C04535 /* 注册.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA301C00491B00C04535 /* 注册.png */; };
+		3102FA781C00491B00C04535 /* 注册完成.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA311C00491B00C04535 /* 注册完成.png */; };
+		3102FA791C00491B00C04535 /* WuJ.png in Resources */ = {isa = PBXBuildFile; fileRef = 3102FA321C00491B00C04535 /* WuJ.png */; };
+		3102FA7F1C004E5300C04535 /* PeripheralDevicesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102FA7E1C004E5300C04535 /* PeripheralDevicesCell.m */; };
+		3102FA851C00545200C04535 /* DataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102FA821C00545200C04535 /* DataObject.m */; };
+		3102FA861C00545200C04535 /* UARTPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102FA841C00545200C04535 /* UARTPeripheral.m */; };
+		3102FA881C0054AE00C04535 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3102FA871C0054AE00C04535 /* CoreBluetooth.framework */; };
+		3102FA8A1C0054B600C04535 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3102FA891C0054B600C04535 /* UIKit.framework */; };
+		3102FA8C1C0054C200C04535 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3102FA8B1C0054C200C04535 /* CoreGraphics.framework */; };
+		31180F861C133DD600FA6934 /* IQKeyBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31180F831C133DD600FA6934 /* IQKeyBoardManager.m */; };
+		31180F871C133DD600FA6934 /* IQSegmentedNextPrevious.m in Sources */ = {isa = PBXBuildFile; fileRef = 31180F851C133DD600FA6934 /* IQSegmentedNextPrevious.m */; };
+		319BB8A61C0B4A12001ED00A /* barbuttonicon_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 319BB8A31C0B4A12001ED00A /* barbuttonicon_delete.png */; };
+		319BB8A71C0B4A12001ED00A /* barbuttonicon_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319BB8A41C0B4A12001ED00A /* barbuttonicon_delete@2x.png */; };
+		319BB8A81C0B4A12001ED00A /* barbuttonicon_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319BB8A51C0B4A12001ED00A /* barbuttonicon_delete@3x.png */; };
+		319BB8B11C0B4B6F001ED00A /* EmoticonCloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319BB8AF1C0B4B6F001ED00A /* EmoticonCloseButton@2x.png */; };
+		319BB8B21C0B4B6F001ED00A /* EmoticonCloseButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319BB8B01C0B4B6F001ED00A /* EmoticonCloseButton@3x.png */; };
+		319DA1881C09998F00EC2482 /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1851C09998F00EC2482 /* icon_back.png */; };
+		319DA1891C09998F00EC2482 /* icon_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1861C09998F00EC2482 /* icon_back@2x.png */; };
+		319DA18A1C09998F00EC2482 /* icon_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1871C09998F00EC2482 /* icon_back@3x.png */; };
+		319DA18C1C099C0600EC2482 /* barbuttonicon_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA18B1C099C0600EC2482 /* barbuttonicon_add@2x.png */; };
+		319DA18F1C099C6D00EC2482 /* barbuttonicon_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA18D1C099C6D00EC2482 /* barbuttonicon_add.png */; };
+		319DA1901C099C6D00EC2482 /* barbuttonicon_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA18E1C099C6D00EC2482 /* barbuttonicon_add@3x.png */; };
+		319DA1931C099CB200EC2482 /* barbuttonicon_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1911C099CB200EC2482 /* barbuttonicon_back@2x.png */; };
+		319DA1941C099CB200EC2482 /* barbuttonicon_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1921C099CB200EC2482 /* barbuttonicon_back@3x.png */; };
+		319DA1981C099E7800EC2482 /* barbuttonicon_set.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1951C099E7800EC2482 /* barbuttonicon_set.png */; };
+		319DA1991C099E7800EC2482 /* barbuttonicon_set@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1961C099E7800EC2482 /* barbuttonicon_set@2x.png */; };
+		319DA19A1C099E7800EC2482 /* barbuttonicon_set@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319DA1971C099E7800EC2482 /* barbuttonicon_set@3x.png */; };
+		31E79C1B1C0F1E6F00CAF416 /* TimerAddVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E79C1A1C0F1E6F00CAF416 /* TimerAddVC.m */; };
+		31E79C1E1C0F221F00CAF416 /* ModifyNameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E79C1D1C0F221F00CAF416 /* ModifyNameVC.m */; };
+		31E79C211C0F222700CAF416 /* PeripheralDevicesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E79C201C0F222700CAF416 /* PeripheralDevicesVC.m */; };
+		31E79C241C0F2D4400CAF416 /* GameLibrary_arrDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31E79C221C0F2D4400CAF416 /* GameLibrary_arrDown@2x.png */; };
+		31E79C251C0F2D4400CAF416 /* GameLibrary_arrUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31E79C231C0F2D4400CAF416 /* GameLibrary_arrUp@2x.png */; };
+		31E79C281C0F39D300CAF416 /* DelayTaskData.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E79C271C0F39D300CAF416 /* DelayTaskData.m */; };
+		31F522061C0DF8700058C9D9 /* HomeVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F521FE1C0DF8700058C9D9 /* HomeVc.m */; };
+		31F522081C0DF8700058C9D9 /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F522031C0DF8700058C9D9 /* OperationVC.m */; };
+		31F5220C1C0DF8BE0058C9D9 /* DelayListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F5220B1C0DF8BE0058C9D9 /* DelayListVC.m */; };
+		31F5220F1C0DFCD90058C9D9 /* DelayListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F5220E1C0DFCD90058C9D9 /* DelayListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +156,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062F1D041C02EA9600D37589 /* CWLAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLAlert.h; sourceTree = "<group>"; };
+		062F1D051C02EA9600D37589 /* CWLAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLAlert.m; sourceTree = "<group>"; };
+		062F1D081C02EB0E00D37589 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		062F1D091C02EB0E00D37589 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		062F1D0E1C02FEAF00D37589 /* EquipmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipmentCell.h; sourceTree = "<group>"; };
+		062F1D0F1C02FEAF00D37589 /* EquipmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipmentCell.m; sourceTree = "<group>"; };
+		062F1D111C0309E500D37589 /* DataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStorage.h; sourceTree = "<group>"; };
+		062F1D121C0309E500D37589 /* DataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStorage.m; sourceTree = "<group>"; };
+		189A382E1BE64E30006EFD78 /* RegisteredVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteredVC.h; sourceTree = "<group>"; };
+		189A382F1BE64E30006EFD78 /* RegisteredVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteredVC.m; sourceTree = "<group>"; };
+		189A38311BE65520006EFD78 /* RegistereConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistereConfirmVC.h; sourceTree = "<group>"; };
+		189A38321BE65520006EFD78 /* RegistereConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistereConfirmVC.m; sourceTree = "<group>"; };
 		18C970ED1BE52B5C00C3AB7A /* lampApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lampApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C970F11BE52B5C00C3AB7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18C970F31BE52B5C00C3AB7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		18C970F41BE52B5C00C3AB7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18C970F61BE52B5C00C3AB7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18C970F71BE52B5C00C3AB7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18C970FA1BE52B5C00C3AB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18C970FC1BE52B5C00C3AB7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C970FF1BE52B5C00C3AB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +180,149 @@
 		18C971111BE52B5C00C3AB7A /* lampAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lampAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C971151BE52B5C00C3AB7A /* lampAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lampAppUITests.m; sourceTree = "<group>"; };
 		18C971171BE52B5C00C3AB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C971271BE52CF400C3AB7A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18C971281BE52CF400C3AB7A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18C971291BE52CF400C3AB7A /* HomeTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabBarVC.h; sourceTree = "<group>"; };
+		18C9712A1BE52CF400C3AB7A /* HomeTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabBarVC.m; sourceTree = "<group>"; };
+		18C9712B1BE52CF400C3AB7A /* UIViewController+Transit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Transit.h"; sourceTree = "<group>"; };
+		18C9712C1BE52CF400C3AB7A /* UIViewController+Transit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Transit.m"; sourceTree = "<group>"; };
+		18C9712D1BE52CF400C3AB7A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18C9712E1BE52CF400C3AB7A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18C971831BE52CF400C3AB7A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18C971851BE52CF400C3AB7A /* CHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHeader.h; sourceTree = "<group>"; };
+		18C971861BE52CF400C3AB7A /* ControlsToCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsToCreate.h; sourceTree = "<group>"; };
+		18C971871BE52CF400C3AB7A /* ControlsToCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsToCreate.m; sourceTree = "<group>"; };
+		18C971881BE52CF400C3AB7A /* CWLtool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWLtool.h; sourceTree = "<group>"; };
+		18C971891BE52CF400C3AB7A /* CWLtool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLtool.m; sourceTree = "<group>"; };
+		18C9718A1BE52CF400C3AB7A /* UIView+Auxiliary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Auxiliary.h"; sourceTree = "<group>"; };
+		18C9718B1BE52CF400C3AB7A /* UIView+Auxiliary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Auxiliary.m"; sourceTree = "<group>"; };
+		18C971BC1BE5319D00C3AB7A /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		18C971BD1BE5319D00C3AB7A /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		18C971BF1BE531B700C3AB7A /* PersonalVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalVC.h; sourceTree = "<group>"; };
+		18C971C01BE531B700C3AB7A /* PersonalVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalVC.m; sourceTree = "<group>"; };
+		18C971C21BE531CD00C3AB7A /* FoundVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundVC.h; sourceTree = "<group>"; };
+		18C971C31BE531CD00C3AB7A /* FoundVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundVC.m; sourceTree = "<group>"; };
+		3102F9E71C0041E000C04535 /* 调色板.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "调色板.png"; sourceTree = "<group>"; };
+		3102F9E91C00446300C04535 /* CwlEncapsulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CwlEncapsulation.h; sourceTree = "<group>"; };
+		3102F9EA1C00446300C04535 /* CwlEncapsulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CwlEncapsulation.m; sourceTree = "<group>"; };
+		3102F9EC1C00491B00C04535 /* 安防盾.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安防盾.png"; sourceTree = "<group>"; };
+		3102F9ED1C00491B00C04535 /* 白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白.png"; sourceTree = "<group>"; };
+		3102F9EE1C00491B00C04535 /* 备注.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "备注.png"; sourceTree = "<group>"; };
+		3102F9EF1C00491B00C04535 /* 插座.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "插座.png"; sourceTree = "<group>"; };
+		3102F9F01C00491B00C04535 /* 灯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯.png"; sourceTree = "<group>"; };
+		3102F9F11C00491B00C04535 /* 灯2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯2.png"; sourceTree = "<group>"; };
+		3102F9F21C00491B00C04535 /* 灯3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯3.png"; sourceTree = "<group>"; };
+		3102F9F31C00491B00C04535 /* 灯小图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯小图.png"; sourceTree = "<group>"; };
+		3102F9F41C00491B00C04535 /* 登录1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录1.png"; sourceTree = "<group>"; };
+		3102F9F51C00491B00C04535 /* 登录2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录2.png"; sourceTree = "<group>"; };
+		3102F9F61C00491B00C04535 /* 登录3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录3.png"; sourceTree = "<group>"; };
+		3102F9F71C00491B00C04535 /* 定时任务.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "定时任务.png"; sourceTree = "<group>"; };
+		3102F9F81C00491B00C04535 /* 发现.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现.png"; sourceTree = "<group>"; };
+		3102F9F91C00491B00C04535 /* 发现1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现1.png"; sourceTree = "<group>"; };
+		3102F9FA1C00491B00C04535 /* 发现2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "发现2.png"; sourceTree = "<group>"; };
+		3102F9FB1C00491B00C04535 /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回.png"; sourceTree = "<group>"; };
+		3102F9FC1C00491B00C04535 /* 房门.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "房门.png"; sourceTree = "<group>"; };
+		3102F9FD1C00491B00C04535 /* 红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红.png"; sourceTree = "<group>"; };
+		3102F9FE1C00491B00C04535 /* 滑钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滑钮.png"; sourceTree = "<group>"; };
+		3102F9FF1C00491B00C04535 /* 滑钮2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滑钮2.png"; sourceTree = "<group>"; };
+		3102FA001C00491B00C04535 /* 获取验证码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "获取验证码.png"; sourceTree = "<group>"; };
+		3102FA011C00491B00C04535 /* 渐变.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "渐变.png"; sourceTree = "<group>"; };
+		3102FA021C00491B00C04535 /* 开关.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开关.png"; sourceTree = "<group>"; };
+		3102FA031C00491B00C04535 /* 开机页面.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开机页面.png"; sourceTree = "<group>"; };
+		3102FA041C00491B00C04535 /* 开启与关闭.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开启与关闭.png"; sourceTree = "<group>"; };
+		3102FA051C00491B00C04535 /* 蓝.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝.png"; sourceTree = "<group>"; };
+		3102FA061C00491B00C04535 /* 亮度.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "亮度.png"; sourceTree = "<group>"; };
+		3102FA071C00491B00C04535 /* 绿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿.png"; sourceTree = "<group>"; };
+		3102FA081C00491B00C04535 /* 密码1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码1.png"; sourceTree = "<group>"; };
+		3102FA091C00491B00C04535 /* 昵称.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "昵称.png"; sourceTree = "<group>"; };
+		3102FA0A1C00491B00C04535 /* 取消.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "取消.png"; sourceTree = "<group>"; };
+		3102FA0B1C00491B00C04535 /* 确认.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "确认.png"; sourceTree = "<group>"; };
+		3102FA0C1C00491B00C04535 /* 任性渐变.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "任性渐变.png"; sourceTree = "<group>"; };
+		3102FA0D1C00491B00C04535 /* 任性闪耀.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "任性闪耀.png"; sourceTree = "<group>"; };
+		3102FA0E1C00491B00C04535 /* 删除.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除.png"; sourceTree = "<group>"; };
+		3102FA0F1C00491B00C04535 /* 删除2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "删除2.png"; sourceTree = "<group>"; };
+		3102FA101C00491B00C04535 /* 闪耀.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "闪耀.png"; sourceTree = "<group>"; };
+		3102FA111C00491B00C04535 /* 设备.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设备.png"; sourceTree = "<group>"; };
+		3102FA121C00491B00C04535 /* 设备1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设备1.png"; sourceTree = "<group>"; };
+		3102FA131C00491B00C04535 /* 设备2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设备2.png"; sourceTree = "<group>"; };
+		3102FA141C00491B00C04535 /* 设备信息.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设备信息.png"; sourceTree = "<group>"; };
+		3102FA151C00491B00C04535 /* 设置密码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置密码.png"; sourceTree = "<group>"; };
+		3102FA161C00491B00C04535 /* 设置密码1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置密码1.png"; sourceTree = "<group>"; };
+		3102FA171C00491B00C04535 /* 手机号码1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手机号码1.png"; sourceTree = "<group>"; };
+		3102FA181C00491B00C04535 /* 输入密码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "输入密码.png"; sourceTree = "<group>"; };
+		3102FA191C00491B00C04535 /* 速度.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "速度.png"; sourceTree = "<group>"; };
+		3102FA1A1C00491B00C04535 /* 锁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锁.png"; sourceTree = "<group>"; };
+		3102FA1B1C00491B00C04535 /* 锁2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锁2.png"; sourceTree = "<group>"; };
+		3102FA1C1C00491B00C04535 /* 锁3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锁3.png"; sourceTree = "<group>"; };
+		3102FA1D1C00491B00C04535 /* 添加按键1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加按键1.png"; sourceTree = "<group>"; };
+		3102FA1E1C00491B00C04535 /* 添加按键2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加按键2.png"; sourceTree = "<group>"; };
+		3102FA1F1C00491B00C04535 /* 添加延时.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加延时.png"; sourceTree = "<group>"; };
+		3102FA201C00491B00C04535 /* 添加延时1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加延时1.png"; sourceTree = "<group>"; };
+		3102FA211C00491B00C04535 /* 忘记密码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "忘记密码.png"; sourceTree = "<group>"; };
+		3102FA221C00491B00C04535 /* 我.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我.png"; sourceTree = "<group>"; };
+		3102FA231C00491B00C04535 /* 我1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我1.png"; sourceTree = "<group>"; };
+		3102FA241C00491B00C04535 /* 我2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我2.png"; sourceTree = "<group>"; };
+		3102FA251C00491B00C04535 /* 下一步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "下一步.png"; sourceTree = "<group>"; };
+		3102FA261C00491B00C04535 /* 修改名称.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "修改名称.png"; sourceTree = "<group>"; };
+		3102FA271C00491B00C04535 /* 延时任务.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "延时任务.png"; sourceTree = "<group>"; };
+		3102FA281C00491B00C04535 /* 移动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "移动.png"; sourceTree = "<group>"; };
+		3102FA291C00491B00C04535 /* 用户列表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "用户列表.png"; sourceTree = "<group>"; };
+		3102FA2A1C00491B00C04535 /* 用户名1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "用户名1.png"; sourceTree = "<group>"; };
+		3102FA2B1C00491B00C04535 /* 右列表.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "右列表.png"; sourceTree = "<group>"; };
+		3102FA2C1C00491B00C04535 /* 再输入密码.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "再输入密码.png"; sourceTree = "<group>"; };
+		3102FA2D1C00491B00C04535 /* 智能灯1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "智能灯1.png"; sourceTree = "<group>"; };
+		3102FA2E1C00491B00C04535 /* 智能灯2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "智能灯2.png"; sourceTree = "<group>"; };
+		3102FA2F1C00491B00C04535 /* 智能灯3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "智能灯3.png"; sourceTree = "<group>"; };
+		3102FA301C00491B00C04535 /* 注册.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "注册.png"; sourceTree = "<group>"; };
+		3102FA311C00491B00C04535 /* 注册完成.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "注册完成.png"; sourceTree = "<group>"; };
+		3102FA321C00491B00C04535 /* WuJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WuJ.png; sourceTree = "<group>"; };
+		3102FA7D1C004E5300C04535 /* PeripheralDevicesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralDevicesCell.h; sourceTree = "<group>"; };
+		3102FA7E1C004E5300C04535 /* PeripheralDevicesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralDevicesCell.m; sourceTree = "<group>"; };
+		3102FA811C00545200C04535 /* DataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObject.h; sourceTree = "<group>"; };
+		3102FA821C00545200C04535 /* DataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObject.m; sourceTree = "<group>"; };
+		3102FA831C00545200C04535 /* UARTPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UARTPeripheral.h; sourceTree = "<group>"; };
+		3102FA841C00545200C04535 /* UARTPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARTPeripheral.m; sourceTree = "<group>"; };
+		3102FA871C0054AE00C04535 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3102FA891C0054B600C04535 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3102FA8B1C0054C200C04535 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		31180F821C133DD600FA6934 /* IQKeyBoardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyBoardManager.h; sourceTree = "<group>"; };
+		31180F831C133DD600FA6934 /* IQKeyBoardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyBoardManager.m; sourceTree = "<group>"; };
+		31180F841C133DD600FA6934 /* IQSegmentedNextPrevious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSegmentedNextPrevious.h; sourceTree = "<group>"; };
+		31180F851C133DD600FA6934 /* IQSegmentedNextPrevious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSegmentedNextPrevious.m; sourceTree = "<group>"; };
+		319BB8A31C0B4A12001ED00A /* barbuttonicon_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barbuttonicon_delete.png; sourceTree = "<group>"; };
+		319BB8A41C0B4A12001ED00A /* barbuttonicon_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_delete@2x.png"; sourceTree = "<group>"; };
+		319BB8A51C0B4A12001ED00A /* barbuttonicon_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_delete@3x.png"; sourceTree = "<group>"; };
+		319BB8AF1C0B4B6F001ED00A /* EmoticonCloseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EmoticonCloseButton@2x.png"; sourceTree = "<group>"; };
+		319BB8B01C0B4B6F001ED00A /* EmoticonCloseButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EmoticonCloseButton@3x.png"; sourceTree = "<group>"; };
+		319DA1851C09998F00EC2482 /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
+		319DA1861C09998F00EC2482 /* icon_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_back@2x.png"; sourceTree = "<group>"; };
+		319DA1871C09998F00EC2482 /* icon_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_back@3x.png"; sourceTree = "<group>"; };
+		319DA18B1C099C0600EC2482 /* barbuttonicon_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_add@2x.png"; sourceTree = "<group>"; };
+		319DA18D1C099C6D00EC2482 /* barbuttonicon_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barbuttonicon_add.png; sourceTree = "<group>"; };
+		319DA18E1C099C6D00EC2482 /* barbuttonicon_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_add@3x.png"; sourceTree = "<group>"; };
+		319DA1911C099CB200EC2482 /* barbuttonicon_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_back@2x.png"; sourceTree = "<group>"; };
+		319DA1921C099CB200EC2482 /* barbuttonicon_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_back@3x.png"; sourceTree = "<group>"; };
+		319DA1951C099E7800EC2482 /* barbuttonicon_set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barbuttonicon_set.png; sourceTree = "<group>"; };
+		319DA1961C099E7800EC2482 /* barbuttonicon_set@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_set@2x.png"; sourceTree = "<group>"; };
+		319DA1971C099E7800EC2482 /* barbuttonicon_set@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barbuttonicon_set@3x.png"; sourceTree = "<group>"; };
+		31E79C191C0F1E6F00CAF416 /* TimerAddVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerAddVC.h; sourceTree = "<group>"; };
+		31E79C1A1C0F1E6F00CAF416 /* TimerAddVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerAddVC.m; sourceTree = "<group>"; };
+		31E79C1C1C0F221F00CAF416 /* ModifyNameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyNameVC.h; sourceTree = "<group>"; };
+		31E79C1D1C0F221F00CAF416 /* ModifyNameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyNameVC.m; sourceTree = "<group>"; };
+		31E79C1F1C0F222700CAF416 /* PeripheralDevicesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralDevicesVC.h; sourceTree = "<group>"; };
+		31E79C201C0F222700CAF416 /* PeripheralDevicesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralDevicesVC.m; sourceTree = "<group>"; };
+		31E79C221C0F2D4400CAF416 /* GameLibrary_arrDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GameLibrary_arrDown@2x.png"; sourceTree = "<group>"; };
+		31E79C231C0F2D4400CAF416 /* GameLibrary_arrUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GameLibrary_arrUp@2x.png"; sourceTree = "<group>"; };
+		31E79C261C0F39D300CAF416 /* DelayTaskData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelayTaskData.h; sourceTree = "<group>"; };
+		31E79C271C0F39D300CAF416 /* DelayTaskData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelayTaskData.m; sourceTree = "<group>"; };
+		31F521FD1C0DF8700058C9D9 /* HomeVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVc.h; sourceTree = "<group>"; };
+		31F521FE1C0DF8700058C9D9 /* HomeVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVc.m; sourceTree = "<group>"; };
+		31F522021C0DF8700058C9D9 /* OperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationVC.h; sourceTree = "<group>"; };
+		31F522031C0DF8700058C9D9 /* OperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationVC.m; sourceTree = "<group>"; };
+		31F5220A1C0DF8BE0058C9D9 /* DelayListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelayListVC.h; sourceTree = "<group>"; };
+		31F5220B1C0DF8BE0058C9D9 /* DelayListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelayListVC.m; sourceTree = "<group>"; };
+		31F5220D1C0DFCD90058C9D9 /* DelayListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelayListCell.h; sourceTree = "<group>"; };
+		31F5220E1C0DFCD90058C9D9 /* DelayListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelayListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +330,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3102FA8C1C0054C200C04535 /* CoreGraphics.framework in Frameworks */,
+				3102FA8A1C0054B600C04535 /* UIKit.framework in Frameworks */,
+				3102FA881C0054AE00C04535 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +353,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062F1D071C02EB0E00D37589 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				062F1D081C02EB0E00D37589 /* MBProgressHUD.h */,
+				062F1D091C02EB0E00D37589 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		18C970E41BE52B5C00C3AB7A = {
 			isa = PBXGroup;
 			children = (
+				18C971231BE52CD600C3AB7A /* Frameworks */,
 				18C970EF1BE52B5C00C3AB7A /* lampApp */,
 				18C971091BE52B5C00C3AB7A /* lampAppTests */,
 				18C971141BE52B5C00C3AB7A /* lampAppUITests */,
@@ -101,10 +386,10 @@
 		18C970EF1BE52B5C00C3AB7A /* lampApp */ = {
 			isa = PBXGroup;
 			children = (
-				18C970F31BE52B5C00C3AB7A /* AppDelegate.h */,
-				18C970F41BE52B5C00C3AB7A /* AppDelegate.m */,
-				18C970F61BE52B5C00C3AB7A /* ViewController.h */,
-				18C970F71BE52B5C00C3AB7A /* ViewController.m */,
+				18C971841BE52CF400C3AB7A /* Uitils */,
+				18C971341BE52CF400C3AB7A /* Libs */,
+				18C971811BE52CF400C3AB7A /* Pics */,
+				18C971241BE52CF400C3AB7A /* Class */,
 				18C970F91BE52B5C00C3AB7A /* Main.storyboard */,
 				18C970FC1BE52B5C00C3AB7A /* Assets.xcassets */,
 				18C970FE1BE52B5C00C3AB7A /* LaunchScreen.storyboard */,
@@ -118,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				18C970F11BE52B5C00C3AB7A /* main.m */,
+				18C971831BE52CF400C3AB7A /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +424,322 @@
 				18C971171BE52B5C00C3AB7A /* Info.plist */,
 			);
 			path = lampAppUITests;
+			sourceTree = "<group>";
+		};
+		18C971231BE52CD600C3AB7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3102FA8B1C0054C200C04535 /* CoreGraphics.framework */,
+				3102FA891C0054B600C04535 /* UIKit.framework */,
+				3102FA871C0054AE00C04535 /* CoreBluetooth.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		18C971241BE52CF400C3AB7A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				18C971251BE52CF400C3AB7A /* MVC */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		18C971251BE52CF400C3AB7A /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				18C971261BE52CF400C3AB7A /* AppDelegate */,
+				18C9712F1BE52CF400C3AB7A /* Controller */,
+				18C971301BE52CF400C3AB7A /* Models */,
+				18C971311BE52CF400C3AB7A /* Views */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		18C971261BE52CF400C3AB7A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				18C971271BE52CF400C3AB7A /* AppDelegate.h */,
+				18C971281BE52CF400C3AB7A /* AppDelegate.m */,
+				18C9712D1BE52CF400C3AB7A /* ViewController.h */,
+				18C9712E1BE52CF400C3AB7A /* ViewController.m */,
+				18C971291BE52CF400C3AB7A /* HomeTabBarVC.h */,
+				18C9712A1BE52CF400C3AB7A /* HomeTabBarVC.m */,
+				18C9712B1BE52CF400C3AB7A /* UIViewController+Transit.h */,
+				18C9712C1BE52CF400C3AB7A /* UIViewController+Transit.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		18C9712F1BE52CF400C3AB7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C971B51BE5312400C3AB7A /* FoundVC */,
+				18C971B61BE5312400C3AB7A /* HomeVc */,
+				18C971B71BE5312400C3AB7A /* LoginVC */,
+				18C971B81BE5312400C3AB7A /* PersonalVC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C971301BE52CF400C3AB7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				062F1D111C0309E500D37589 /* DataStorage.h */,
+				062F1D121C0309E500D37589 /* DataStorage.m */,
+				31E79C261C0F39D300CAF416 /* DelayTaskData.h */,
+				31E79C271C0F39D300CAF416 /* DelayTaskData.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18C971311BE52CF400C3AB7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18C971321BE52CF400C3AB7A /* Cells */,
+				18C971331BE52CF400C3AB7A /* Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18C971321BE52CF400C3AB7A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				062F1D0E1C02FEAF00D37589 /* EquipmentCell.h */,
+				062F1D0F1C02FEAF00D37589 /* EquipmentCell.m */,
+				3102FA7D1C004E5300C04535 /* PeripheralDevicesCell.h */,
+				3102FA7E1C004E5300C04535 /* PeripheralDevicesCell.m */,
+				31F5220D1C0DFCD90058C9D9 /* DelayListCell.h */,
+				31F5220E1C0DFCD90058C9D9 /* DelayListCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		18C971331BE52CF400C3AB7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18C971341BE52CF400C3AB7A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				31180F811C133DD600FA6934 /* IQKeyBoardManager */,
+				062F1D071C02EB0E00D37589 /* MBProgressHUD */,
+				3102FA801C00545200C04535 /* bluetooth */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		18C971811BE52CF400C3AB7A /* Pics */ = {
+			isa = PBXGroup;
+			children = (
+				18C971821BE52CF400C3AB7A /* 辅助图 */,
+			);
+			path = Pics;
+			sourceTree = "<group>";
+		};
+		18C971821BE52CF400C3AB7A /* 辅助图 */ = {
+			isa = PBXGroup;
+			children = (
+				31E79C221C0F2D4400CAF416 /* GameLibrary_arrDown@2x.png */,
+				31E79C231C0F2D4400CAF416 /* GameLibrary_arrUp@2x.png */,
+				319BB8AF1C0B4B6F001ED00A /* EmoticonCloseButton@2x.png */,
+				319BB8B01C0B4B6F001ED00A /* EmoticonCloseButton@3x.png */,
+				319BB8A31C0B4A12001ED00A /* barbuttonicon_delete.png */,
+				319BB8A41C0B4A12001ED00A /* barbuttonicon_delete@2x.png */,
+				319BB8A51C0B4A12001ED00A /* barbuttonicon_delete@3x.png */,
+				319DA1951C099E7800EC2482 /* barbuttonicon_set.png */,
+				319DA1961C099E7800EC2482 /* barbuttonicon_set@2x.png */,
+				319DA1971C099E7800EC2482 /* barbuttonicon_set@3x.png */,
+				319DA1911C099CB200EC2482 /* barbuttonicon_back@2x.png */,
+				319DA1921C099CB200EC2482 /* barbuttonicon_back@3x.png */,
+				319DA18D1C099C6D00EC2482 /* barbuttonicon_add.png */,
+				319DA18E1C099C6D00EC2482 /* barbuttonicon_add@3x.png */,
+				319DA18B1C099C0600EC2482 /* barbuttonicon_add@2x.png */,
+				319DA1851C09998F00EC2482 /* icon_back.png */,
+				319DA1861C09998F00EC2482 /* icon_back@2x.png */,
+				319DA1871C09998F00EC2482 /* icon_back@3x.png */,
+				3102F9EC1C00491B00C04535 /* 安防盾.png */,
+				3102F9ED1C00491B00C04535 /* 白.png */,
+				3102F9EE1C00491B00C04535 /* 备注.png */,
+				3102F9EF1C00491B00C04535 /* 插座.png */,
+				3102F9F01C00491B00C04535 /* 灯.png */,
+				3102F9F11C00491B00C04535 /* 灯2.png */,
+				3102F9F21C00491B00C04535 /* 灯3.png */,
+				3102F9F31C00491B00C04535 /* 灯小图.png */,
+				3102F9F41C00491B00C04535 /* 登录1.png */,
+				3102F9F51C00491B00C04535 /* 登录2.png */,
+				3102F9F61C00491B00C04535 /* 登录3.png */,
+				3102F9F71C00491B00C04535 /* 定时任务.png */,
+				3102F9F81C00491B00C04535 /* 发现.png */,
+				3102F9F91C00491B00C04535 /* 发现1.png */,
+				3102F9FA1C00491B00C04535 /* 发现2.png */,
+				3102F9FB1C00491B00C04535 /* 返回.png */,
+				3102F9FC1C00491B00C04535 /* 房门.png */,
+				3102F9FD1C00491B00C04535 /* 红.png */,
+				3102F9FE1C00491B00C04535 /* 滑钮.png */,
+				3102F9FF1C00491B00C04535 /* 滑钮2.png */,
+				3102FA001C00491B00C04535 /* 获取验证码.png */,
+				3102FA011C00491B00C04535 /* 渐变.png */,
+				3102FA021C00491B00C04535 /* 开关.png */,
+				3102FA031C00491B00C04535 /* 开机页面.png */,
+				3102FA041C00491B00C04535 /* 开启与关闭.png */,
+				3102FA051C00491B00C04535 /* 蓝.png */,
+				3102FA061C00491B00C04535 /* 亮度.png */,
+				3102FA071C00491B00C04535 /* 绿.png */,
+				3102FA081C00491B00C04535 /* 密码1.png */,
+				3102FA091C00491B00C04535 /* 昵称.png */,
+				3102FA0A1C00491B00C04535 /* 取消.png */,
+				3102FA0B1C00491B00C04535 /* 确认.png */,
+				3102FA0C1C00491B00C04535 /* 任性渐变.png */,
+				3102FA0D1C00491B00C04535 /* 任性闪耀.png */,
+				3102FA0E1C00491B00C04535 /* 删除.png */,
+				3102FA0F1C00491B00C04535 /* 删除2.png */,
+				3102FA101C00491B00C04535 /* 闪耀.png */,
+				3102FA111C00491B00C04535 /* 设备.png */,
+				3102FA121C00491B00C04535 /* 设备1.png */,
+				3102FA131C00491B00C04535 /* 设备2.png */,
+				3102FA141C00491B00C04535 /* 设备信息.png */,
+				3102FA151C00491B00C04535 /* 设置密码.png */,
+				3102FA161C00491B00C04535 /* 设置密码1.png */,
+				3102FA171C00491B00C04535 /* 手机号码1.png */,
+				3102FA181C00491B00C04535 /* 输入密码.png */,
+				3102FA191C00491B00C04535 /* 速度.png */,
+				3102FA1A1C00491B00C04535 /* 锁.png */,
+				3102FA1B1C00491B00C04535 /* 锁2.png */,
+				3102FA1C1C00491B00C04535 /* 锁3.png */,
+				3102FA1D1C00491B00C04535 /* 添加按键1.png */,
+				3102FA1E1C00491B00C04535 /* 添加按键2.png */,
+				3102FA1F1C00491B00C04535 /* 添加延时.png */,
+				3102FA201C00491B00C04535 /* 添加延时1.png */,
+				3102FA211C00491B00C04535 /* 忘记密码.png */,
+				3102FA221C00491B00C04535 /* 我.png */,
+				3102FA231C00491B00C04535 /* 我1.png */,
+				3102FA241C00491B00C04535 /* 我2.png */,
+				3102FA251C00491B00C04535 /* 下一步.png */,
+				3102FA261C00491B00C04535 /* 修改名称.png */,
+				3102FA271C00491B00C04535 /* 延时任务.png */,
+				3102FA281C00491B00C04535 /* 移动.png */,
+				3102FA291C00491B00C04535 /* 用户列表.png */,
+				3102FA2A1C00491B00C04535 /* 用户名1.png */,
+				3102FA2B1C00491B00C04535 /* 右列表.png */,
+				3102FA2C1C00491B00C04535 /* 再输入密码.png */,
+				3102FA2D1C00491B00C04535 /* 智能灯1.png */,
+				3102FA2E1C00491B00C04535 /* 智能灯2.png */,
+				3102FA2F1C00491B00C04535 /* 智能灯3.png */,
+				3102FA301C00491B00C04535 /* 注册.png */,
+				3102FA311C00491B00C04535 /* 注册完成.png */,
+				3102FA321C00491B00C04535 /* WuJ.png */,
+				3102F9E71C0041E000C04535 /* 调色板.png */,
+			);
+			path = "辅助图";
+			sourceTree = "<group>";
+		};
+		18C971841BE52CF400C3AB7A /* Uitils */ = {
+			isa = PBXGroup;
+			children = (
+				18C971851BE52CF400C3AB7A /* CHeader.h */,
+				18C971861BE52CF400C3AB7A /* ControlsToCreate.h */,
+				18C971871BE52CF400C3AB7A /* ControlsToCreate.m */,
+				18C971881BE52CF400C3AB7A /* CWLtool.h */,
+				18C971891BE52CF400C3AB7A /* CWLtool.m */,
+				18C9718A1BE52CF400C3AB7A /* UIView+Auxiliary.h */,
+				18C9718B1BE52CF400C3AB7A /* UIView+Auxiliary.m */,
+				3102F9E91C00446300C04535 /* CwlEncapsulation.h */,
+				3102F9EA1C00446300C04535 /* CwlEncapsulation.m */,
+			);
+			path = Uitils;
+			sourceTree = "<group>";
+		};
+		18C971B51BE5312400C3AB7A /* FoundVC */ = {
+			isa = PBXGroup;
+			children = (
+				18C971C21BE531CD00C3AB7A /* FoundVC.h */,
+				18C971C31BE531CD00C3AB7A /* FoundVC.m */,
+			);
+			path = FoundVC;
+			sourceTree = "<group>";
+		};
+		18C971B61BE5312400C3AB7A /* HomeVc */ = {
+			isa = PBXGroup;
+			children = (
+				31F521FC1C0DF8700058C9D9 /* HomeListVc */,
+				31F522011C0DF8700058C9D9 /* OperationVC */,
+			);
+			path = HomeVc;
+			sourceTree = "<group>";
+		};
+		18C971B71BE5312400C3AB7A /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				18C971BC1BE5319D00C3AB7A /* LoginVC.h */,
+				18C971BD1BE5319D00C3AB7A /* LoginVC.m */,
+				189A382E1BE64E30006EFD78 /* RegisteredVC.h */,
+				189A382F1BE64E30006EFD78 /* RegisteredVC.m */,
+				189A38311BE65520006EFD78 /* RegistereConfirmVC.h */,
+				189A38321BE65520006EFD78 /* RegistereConfirmVC.m */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		18C971B81BE5312400C3AB7A /* PersonalVC */ = {
+			isa = PBXGroup;
+			children = (
+				18C971BF1BE531B700C3AB7A /* PersonalVC.h */,
+				18C971C01BE531B700C3AB7A /* PersonalVC.m */,
+			);
+			path = PersonalVC;
+			sourceTree = "<group>";
+		};
+		3102FA801C00545200C04535 /* bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				062F1D041C02EA9600D37589 /* CWLAlert.h */,
+				062F1D051C02EA9600D37589 /* CWLAlert.m */,
+				3102FA811C00545200C04535 /* DataObject.h */,
+				3102FA821C00545200C04535 /* DataObject.m */,
+				3102FA831C00545200C04535 /* UARTPeripheral.h */,
+				3102FA841C00545200C04535 /* UARTPeripheral.m */,
+			);
+			path = bluetooth;
+			sourceTree = "<group>";
+		};
+		31180F811C133DD600FA6934 /* IQKeyBoardManager */ = {
+			isa = PBXGroup;
+			children = (
+				31180F821C133DD600FA6934 /* IQKeyBoardManager.h */,
+				31180F831C133DD600FA6934 /* IQKeyBoardManager.m */,
+				31180F841C133DD600FA6934 /* IQSegmentedNextPrevious.h */,
+				31180F851C133DD600FA6934 /* IQSegmentedNextPrevious.m */,
+			);
+			path = IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
+		31F521FC1C0DF8700058C9D9 /* HomeListVc */ = {
+			isa = PBXGroup;
+			children = (
+				31F521FD1C0DF8700058C9D9 /* HomeVc.h */,
+				31F521FE1C0DF8700058C9D9 /* HomeVc.m */,
+				31E79C1F1C0F222700CAF416 /* PeripheralDevicesVC.h */,
+				31E79C201C0F222700CAF416 /* PeripheralDevicesVC.m */,
+			);
+			path = HomeListVc;
+			sourceTree = "<group>";
+		};
+		31F522011C0DF8700058C9D9 /* OperationVC */ = {
+			isa = PBXGroup;
+			children = (
+				31F522021C0DF8700058C9D9 /* OperationVC.h */,
+				31F522031C0DF8700058C9D9 /* OperationVC.m */,
+				31E79C1C1C0F221F00CAF416 /* ModifyNameVC.h */,
+				31E79C1D1C0F221F00CAF416 /* ModifyNameVC.m */,
+				31F5220A1C0DF8BE0058C9D9 /* DelayListVC.h */,
+				31F5220B1C0DF8BE0058C9D9 /* DelayListVC.m */,
+				31E79C191C0F1E6F00CAF416 /* TimerAddVC.h */,
+				31E79C1A1C0F1E6F00CAF416 /* TimerAddVC.m */,
+			);
+			path = OperationVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +809,6 @@
 				TargetAttributes = {
 					18C970EC1BE52B5C00C3AB7A = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = L99SQH8RCV;
 					};
 					18C971051BE52B5C00C3AB7A = {
 						CreatedOnToolsVersion = 7.1;
@@ -246,9 +847,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3102FA791C00491B00C04535 /* WuJ.png in Resources */,
+				3102FA6F1C00491B00C04535 /* 移动.png in Resources */,
+				3102FA751C00491B00C04535 /* 智能灯2.png in Resources */,
+				3102FA621C00491B00C04535 /* 锁2.png in Resources */,
+				319DA18C1C099C0600EC2482 /* barbuttonicon_add@2x.png in Resources */,
+				3102FA591C00491B00C04535 /* 设备1.png in Resources */,
+				3102FA581C00491B00C04535 /* 设备.png in Resources */,
+				3102FA781C00491B00C04535 /* 注册完成.png in Resources */,
+				3102FA6E1C00491B00C04535 /* 延时任务.png in Resources */,
+				3102FA441C00491B00C04535 /* 红.png in Resources */,
+				3102FA411C00491B00C04535 /* 发现2.png in Resources */,
+				3102FA381C00491B00C04535 /* 灯2.png in Resources */,
+				3102FA461C00491B00C04535 /* 滑钮2.png in Resources */,
+				3102FA5C1C00491B00C04535 /* 设置密码.png in Resources */,
+				3102FA771C00491B00C04535 /* 注册.png in Resources */,
+				319BB8B11C0B4B6F001ED00A /* EmoticonCloseButton@2x.png in Resources */,
+				3102FA6D1C00491B00C04535 /* 修改名称.png in Resources */,
 				18C971001BE52B5C00C3AB7A /* LaunchScreen.storyboard in Resources */,
+				3102FA3B1C00491B00C04535 /* 登录1.png in Resources */,
+				3102FA3F1C00491B00C04535 /* 发现.png in Resources */,
+				3102FA631C00491B00C04535 /* 锁3.png in Resources */,
+				3102FA601C00491B00C04535 /* 速度.png in Resources */,
+				3102FA3D1C00491B00C04535 /* 登录3.png in Resources */,
+				3102FA4A1C00491B00C04535 /* 开机页面.png in Resources */,
+				3102FA4B1C00491B00C04535 /* 开启与关闭.png in Resources */,
+				3102FA501C00491B00C04535 /* 昵称.png in Resources */,
 				18C970FD1BE52B5C00C3AB7A /* Assets.xcassets in Resources */,
+				31E79C251C0F2D4400CAF416 /* GameLibrary_arrUp@2x.png in Resources */,
+				319DA1931C099CB200EC2482 /* barbuttonicon_back@2x.png in Resources */,
+				3102FA661C00491B00C04535 /* 添加延时.png in Resources */,
+				3102FA361C00491B00C04535 /* 插座.png in Resources */,
+				31E79C241C0F2D4400CAF416 /* GameLibrary_arrDown@2x.png in Resources */,
+				3102FA691C00491B00C04535 /* 我.png in Resources */,
+				3102FA371C00491B00C04535 /* 灯.png in Resources */,
+				3102FA571C00491B00C04535 /* 闪耀.png in Resources */,
+				3102FA431C00491B00C04535 /* 房门.png in Resources */,
+				319DA1901C099C6D00EC2482 /* barbuttonicon_add@3x.png in Resources */,
+				3102FA3E1C00491B00C04535 /* 定时任务.png in Resources */,
+				3102FA4F1C00491B00C04535 /* 密码1.png in Resources */,
+				3102FA481C00491B00C04535 /* 渐变.png in Resources */,
+				3102FA641C00491B00C04535 /* 添加按键1.png in Resources */,
+				3102FA3C1C00491B00C04535 /* 登录2.png in Resources */,
+				3102FA731C00491B00C04535 /* 再输入密码.png in Resources */,
+				3102F9E81C0041E000C04535 /* 调色板.png in Resources */,
+				3102FA3A1C00491B00C04535 /* 灯小图.png in Resources */,
+				3102FA491C00491B00C04535 /* 开关.png in Resources */,
+				319BB8A61C0B4A12001ED00A /* barbuttonicon_delete.png in Resources */,
+				3102FA5E1C00491B00C04535 /* 手机号码1.png in Resources */,
+				3102FA401C00491B00C04535 /* 发现1.png in Resources */,
+				3102FA741C00491B00C04535 /* 智能灯1.png in Resources */,
+				3102FA531C00491B00C04535 /* 任性渐变.png in Resources */,
+				3102FA561C00491B00C04535 /* 删除2.png in Resources */,
+				3102FA451C00491B00C04535 /* 滑钮.png in Resources */,
+				3102FA341C00491B00C04535 /* 白.png in Resources */,
+				3102FA761C00491B00C04535 /* 智能灯3.png in Resources */,
+				3102FA5F1C00491B00C04535 /* 输入密码.png in Resources */,
+				319DA18A1C09998F00EC2482 /* icon_back@3x.png in Resources */,
+				3102FA551C00491B00C04535 /* 删除.png in Resources */,
+				3102FA511C00491B00C04535 /* 取消.png in Resources */,
+				3102FA651C00491B00C04535 /* 添加按键2.png in Resources */,
+				3102FA4E1C00491B00C04535 /* 绿.png in Resources */,
+				319DA1981C099E7800EC2482 /* barbuttonicon_set.png in Resources */,
+				3102FA5A1C00491B00C04535 /* 设备2.png in Resources */,
+				3102FA421C00491B00C04535 /* 返回.png in Resources */,
+				319BB8A81C0B4A12001ED00A /* barbuttonicon_delete@3x.png in Resources */,
+				3102FA471C00491B00C04535 /* 获取验证码.png in Resources */,
+				319DA1891C09998F00EC2482 /* icon_back@2x.png in Resources */,
+				3102FA331C00491B00C04535 /* 安防盾.png in Resources */,
+				3102FA681C00491B00C04535 /* 忘记密码.png in Resources */,
+				3102FA4D1C00491B00C04535 /* 亮度.png in Resources */,
+				3102FA721C00491B00C04535 /* 右列表.png in Resources */,
+				3102FA521C00491B00C04535 /* 确认.png in Resources */,
+				3102FA391C00491B00C04535 /* 灯3.png in Resources */,
+				3102FA5B1C00491B00C04535 /* 设备信息.png in Resources */,
+				319DA19A1C099E7800EC2482 /* barbuttonicon_set@3x.png in Resources */,
+				3102FA6C1C00491B00C04535 /* 下一步.png in Resources */,
+				319BB8B21C0B4B6F001ED00A /* EmoticonCloseButton@3x.png in Resources */,
+				3102FA611C00491B00C04535 /* 锁.png in Resources */,
+				319DA1941C099CB200EC2482 /* barbuttonicon_back@3x.png in Resources */,
+				3102FA4C1C00491B00C04535 /* 蓝.png in Resources */,
+				3102FA5D1C00491B00C04535 /* 设置密码1.png in Resources */,
+				319BB8A71C0B4A12001ED00A /* barbuttonicon_delete@2x.png in Resources */,
+				3102FA6A1C00491B00C04535 /* 我1.png in Resources */,
 				18C970FB1BE52B5C00C3AB7A /* Main.storyboard in Resources */,
+				3102FA351C00491B00C04535 /* 备注.png in Resources */,
+				319DA1881C09998F00EC2482 /* icon_back.png in Resources */,
+				319DA18F1C099C6D00EC2482 /* barbuttonicon_add.png in Resources */,
+				3102FA6B1C00491B00C04535 /* 我2.png in Resources */,
+				3102FA701C00491B00C04535 /* 用户列表.png in Resources */,
+				3102FA671C00491B00C04535 /* 添加延时1.png in Resources */,
+				3102FA711C00491B00C04535 /* 用户名1.png in Resources */,
+				319DA1991C099E7800EC2482 /* barbuttonicon_set@2x.png in Resources */,
+				3102FA541C00491B00C04535 /* 任性闪耀.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +964,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C970F81BE52B5C00C3AB7A /* ViewController.m in Sources */,
-				18C970F51BE52B5C00C3AB7A /* AppDelegate.m in Sources */,
+				18C9718C1BE52CF400C3AB7A /* AppDelegate.m in Sources */,
+				18C971BE1BE5319D00C3AB7A /* LoginVC.m in Sources */,
+				31180F861C133DD600FA6934 /* IQKeyBoardManager.m in Sources */,
+				18C971C11BE531B700C3AB7A /* PersonalVC.m in Sources */,
+				18C9718D1BE52CF400C3AB7A /* HomeTabBarVC.m in Sources */,
+				3102FA7F1C004E5300C04535 /* PeripheralDevicesCell.m in Sources */,
+				189A38301BE64E30006EFD78 /* RegisteredVC.m in Sources */,
+				062F1D061C02EA9600D37589 /* CWLAlert.m in Sources */,
+				189A38331BE65520006EFD78 /* RegistereConfirmVC.m in Sources */,
+				31E79C211C0F222700CAF416 /* PeripheralDevicesVC.m in Sources */,
+				18C971B21BE52CF400C3AB7A /* ControlsToCreate.m in Sources */,
+				062F1D101C02FEAF00D37589 /* EquipmentCell.m in Sources */,
+				18C9718E1BE52CF400C3AB7A /* UIViewController+Transit.m in Sources */,
+				3102F9EB1C00446300C04535 /* CwlEncapsulation.m in Sources */,
+				3102FA861C00545200C04535 /* UARTPeripheral.m in Sources */,
+				31E79C1B1C0F1E6F00CAF416 /* TimerAddVC.m in Sources */,
 				18C970F21BE52B5C00C3AB7A /* main.m in Sources */,
+				18C9718F1BE52CF400C3AB7A /* ViewController.m in Sources */,
+				062F1D0A1C02EB0E00D37589 /* MBProgressHUD.m in Sources */,
+				31180F871C133DD600FA6934 /* IQSegmentedNextPrevious.m in Sources */,
+				31F5220C1C0DF8BE0058C9D9 /* DelayListVC.m in Sources */,
+				18C971B41BE52CF400C3AB7A /* UIView+Auxiliary.m in Sources */,
+				31F522081C0DF8700058C9D9 /* OperationVC.m in Sources */,
+				18C971C41BE531CD00C3AB7A /* FoundVC.m in Sources */,
+				3102FA851C00545200C04535 /* DataObject.m in Sources */,
+				31F5220F1C0DFCD90058C9D9 /* DelayListCell.m in Sources */,
+				31E79C281C0F39D300CAF416 /* DelayTaskData.m in Sources */,
+				31F522061C0DF8700058C9D9 /* HomeVc.m in Sources */,
+				18C971B31BE52CF400C3AB7A /* CWLtool.m in Sources */,
+				31E79C1E1C0F221F00CAF416 /* ModifyNameVC.m in Sources */,
+				062F1D131C0309E500D37589 /* DataStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +1133,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = lampApp/PrefixHeader.pch;
 				INFOPLIST_FILE = lampApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gatewang.g-mall";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -425,9 +1147,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = lampApp/PrefixHeader.pch;
 				INFOPLIST_FILE = lampApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatewang.lampApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gatewang.g-mall";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -499,6 +1224,7 @@
 				18C9711C1BE52B5C00C3AB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C9711D1BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampAppTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +1233,7 @@
 				18C9711F1BE52B5C00C3AB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C971201BE52B5C00C3AB7A /* Build configuration list for PBXNativeTarget "lampAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +1242,7 @@
 				18C971221BE52B5C00C3AB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

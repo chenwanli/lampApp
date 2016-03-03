@@ -1,5 +1,5 @@
-//
-//  AppDelegate.h
+//  周边
+//  FoundVC.h
 //  lampApp
 //
 //  Created by 冯景安先生 on 15/11/1.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface FoundVC : UIViewController
 
 @end
-

@@ -1,5 +1,5 @@
-//
-//  ViewController.h
+//  登录
+//  LoginVC.h
 //  lampApp
 //
 //  Created by 冯景安先生 on 15/11/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LoginVC : UIViewController
 
 @end
-
