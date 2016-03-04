@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNavigationBarOrSo:@"智能插座" leftImg:@"barbuttonicon_back" rightImg:@"barbuttonicon_set"];
+    [self setNavigationBarOrSo:@"智能灯" leftImg:@"barbuttonicon_back" rightImg:@"barbuttonicon_set"];
     self.view.backgroundColor = RGB_A(39, 40, 43, 1);
     
     for (int i = 0; i < 2; i++) {
@@ -55,72 +55,90 @@
     swatchesImg.delegate = self;
     [scrollView addSubview:swatchesImg];
     
+    UIButton *downBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    downBtn.layer.cornerRadius = 30;
+    downBtn.layer.masksToBounds = YES;
+    downBtn.frame = CGRectMake((swatchesImg.width - 60) / 2, (swatchesImg.width - 60) / 2, 60, 60);
+    [downBtn setBackgroundImage:[UIImage imageNamed:@"中间按钮1"] forState:UIControlStateNormal];
+    [downBtn setBackgroundImage:[UIImage imageNamed:@"中间按钮2"] forState:UIControlStateSelected];
+    [downBtn addTarget:self action:@selector(downBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [swatchesImg addSubview:downBtn];
     
     float typeWidth = (kDeviceWidth - 55) / 4;
     UIButton *colorBtn = nil;
     for (int i = 0; i < 4; i++) {
-        colorBtn = [UIButton cwlBtnType:UIButtonTypeCustom rect:CGRectMake( 20 + i * (typeWidth + 5), swatchesImg.totalHeigth + 50, typeWidth,typeWidth) radius:typeWidth / 2 title:nil titleColor:nil view:self.view];
-        [colorBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [colorBtn setImage:[UIImage imageNamed:@[@"红",@"绿",@"蓝",@"白"][i]] forState:UIControlStateNormal];
-        colorBtn.tag = i + 4;
+        colorBtn = [UIButton cwlBtnType:UIButtonTypeRoundedRect rect:CGRectMake( 20 + i * (typeWidth + 5), swatchesImg.totalHeigth + 70, typeWidth,typeWidth) radius:0 title:nil titleColor:nil view:self.view];
+        [colorBtn setBackgroundImage:[UIImage imageNamed:@"设计图_17"] forState:UIControlStateNormal];
+        [colorBtn setBackgroundImage:[UIImage imageNamed:@[@"大按钮状态红",@"大按钮状态绿",@"大按钮状态蓝",@"大按钮状态白"][i]] forState:UIControlStateSelected];
+        [colorBtn setTitle:@"LIGHT" forState:UIControlStateNormal];
+        [colorBtn setTitleColor:@[[UIColor redColor],[UIColor greenColor],[UIColor blueColor],[UIColor whiteColor]][i] forState:UIControlStateNormal];
+        [colorBtn setTitleColor:@[[UIColor redColor],[UIColor greenColor],[UIColor blueColor],[UIColor whiteColor]][i] forState:UIControlStateSelected];
+        colorBtn.tag = i + 5;
         [colorBtn addTarget:self action:@selector(colorBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:colorBtn];
+        
+        if (i == 0) {
+            _colorBtn = colorBtn;
+        }
     }
     
     typeWidth = (kDeviceWidth - 40) / 5;
     for (int i = 0; i < 5; i++) {
-        UIButton *typeBtn = [UIButton cwlBtnType:UIButtonTypeCustom rect:CGRectMake(10 + i * (typeWidth + 5), colorBtn.totalHeigth + 10, typeWidth,typeWidth) radius:typeWidth / 2 title:nil titleColor:[UIColor whiteColor] view:scrollView];
-//        [typeBtn setImage:[UIImage imageNamed:@[@"渐变",@"闪耀",@"任性闪耀",@"任性渐变",@"彩虹"][i]] forState:UIControlStateNormal];
-        typeBtn.backgroundColor = [UIColor yellowColor];
+        UIButton *typeBtn = [UIButton cwlBtnType:UIButtonTypeRoundedRect rect:CGRectMake(10 + i * (typeWidth + 5), colorBtn.totalHeigth + 10, typeWidth,typeWidth) radius:0 title:nil titleColor:[UIColor whiteColor] view:scrollView];
+        [typeBtn setBackgroundImage:[UIImage imageNamed:@"设计图_30"] forState:UIControlStateNormal];
+        [typeBtn setBackgroundImage:[UIImage imageNamed:@"小按钮状态2"] forState:UIControlStateSelected];
+        [typeBtn setTitle:@[@"闪烁",@"渐变",@"任性\n闪耀",@"任性\n渐变",@"彩虹"][i] forState:UIControlStateNormal];
+        [typeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+        typeBtn.titleLabel.numberOfLines = 2;
         typeBtn.tag = i;
         [typeBtn addTarget:self action:@selector(colorBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:typeBtn];
         
+        if (i == 0) {
+            _typeBtn = colorBtn;
+        }
     }
-    
-    UILabel *lable = [[UILabel alloc]initWithFrame:CGRectMake(10, 20, 60, 30)];
-    lable.font = [UIFont systemFontOfSize:13];
-    lable.textColor = RGB_A(137, 138, 142, 1);
-    lable.textAlignment = 1;
-    lable.text = @"Brightne";
-    [scrollView addSubview:lable];
-    
-    //    进度条
-//    CWLSlider *brightneSlider = [[CWLSlider alloc]initWithFrame:CGRectMake(-95, colorBtn.totalHeigth - 5, 180, 30) color:[UIColor redColor] title:@"BRIGHTNE"];
-//    [scrollView addSubview:brightneSlider];
-//    brightneSlider.block = ^(Byte brightneSliderByte){
-//        _operationData[0] = 0x00;
-//        _operationData[1] = 0x00;
-//        _operationData[2] = 0x00;
-//        _operationData[3] = brightneSliderByte; //白
-//        [self dataWrite];
-//    };
-    
-    UILabel *speedLable = [[UILabel alloc]initWithFrame:CGRectMake(kDeviceWidth - 60, 20, 50, 30)];
-    speedLable.font = [UIFont systemFontOfSize:13];
-    speedLable.textAlignment = 1;
-    speedLable.text = @"Speed";
-    speedLable.textColor = RGB_A(137, 138, 142, 1);
-    [scrollView addSubview:speedLable];
 
-//    CWLSlider *speedSlider= [[CWLSlider alloc]initWithFrame:CGRectMake(kDeviceWidth - 45 -90, colorBtn.totalHeigth - 5, 180, 30) color:[UIColor blueColor] title:@"SPEED"];
-//    [scrollView addSubview:speedSlider];
-//    speedSlider.block = ^(Byte speedSliderByte){
-//        _operationData[4] = speedSliderByte;
-//        [self dataWrite];
-//    };
+    SlidingView *slidingView = [[SlidingView alloc]initWithFrame:CGRectMake(0, 40, 60, 200) title:@"Brightne"];
+    [scrollView addSubview:slidingView];
+    slidingView.block = ^(Byte brightneSliderByte){
+        _operationData[0] = 0x00;
+        _operationData[1] = 0x00;
+        _operationData[2] = 0x00;
+        _operationData[3] = brightneSliderByte; //白
+        [self dataWrite];
+    };
+
+    SlidingView *speedSlidingView = [[SlidingView alloc]initWithFrame:CGRectMake(kDeviceWidth - 60, 40, 60, 200) title:@"Speed"];
+    [scrollView addSubview:speedSlidingView];
+    speedSlidingView.block = ^(Byte speedSliderByte){
+        _operationData[4] = speedSliderByte;
+        [self dataWrite];
+    };
     
     for (int i = 0; i < 2; i++) {
         UIButton *barBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        barBtn.frame = CGRectMake(i * kDeviceWidth / 2, kDeviceHeight - 60, kDeviceWidth / 2, 60);
-        [barBtn setTitle:@[@"定时任务",@"延时任务"][i] forState:UIControlStateNormal];
-        [barBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        barBtn.frame = CGRectMake(i * kDeviceWidth / 2, kDeviceHeight - 80, kDeviceWidth / 2, 80);
+//        [barBtn setTitle:@[@"定时任务",@"延时任务"][i] forState:UIControlStateNormal];
+        [barBtn setImage:[UIImage imageNamed:@[@"底部2",@"底部1"][i]] forState:UIControlStateNormal];
+        [barBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         barBtn.backgroundColor = RGB_A(0, 0, 0, 0.3);
         barBtn.tag = i;
         [barBtn addTarget:self action:@selector(barBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:barBtn];
-        
+     
+        barBtn.imageEdgeInsets = UIEdgeInsetsMake(5, (kDeviceWidth / 2 - 50) / 2,5, (kDeviceWidth / 2 - 60) / 2);
     }
+}
+
+- (void)downBtn:(UIButton *)button{
+    button.selected = !button.selected;
+    if (button.selected) {
+        _operationData[3] = 0x00;
+    }else{
+        _operationData[3] = 0xff;
+    }
+    [self dataWrite];
 }
 
 - (void)barBtn:(UIButton *)sender{
@@ -248,9 +266,17 @@ void bdAddrLow2Str(int data,UInt8 *brakdata, UInt8 *datalong)
  7.白色
  */
 - (void)colorBtnClick:(UIButton *)sender{
-    if(sender.tag < 4){
+    if(sender.tag < 5){
+        _colorBtn.selected = NO;
+        _colorBtn = sender;
+        sender.selected = YES;
+        
         _operationData[5] = [DataObject cwlByte:sender.tag];
     }else{
+        _typeBtn.selected = NO;
+        _typeBtn = sender;
+        sender.selected = YES;
+        
         _operationData[0] = 0x00;
         _operationData[1] = 0x00;
         _operationData[2] = 0x00;

@@ -43,8 +43,12 @@
             }else{
                 self.block([DataObject cwlByte:255 - (int)self.value]);
             }
+            
+            NSLog(@"1--------%f",255 - self.value);
         }else{
             self.block([DataObject cwlByte:(int)self.value]);
+            
+            NSLog(@"2--------%f",255 - self.value);
         }
     }
 }
@@ -56,7 +60,7 @@
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        _image = IMG(@"调色板");
+        _image = IMG(@"色饼");
         self.cwlRounded = 0;
         self.image = _image;
         self.userInteractionEnabled = YES;

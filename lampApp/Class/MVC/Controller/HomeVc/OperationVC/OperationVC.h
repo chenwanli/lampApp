@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ModifyNameVC.h"
 #import "DelayListVC.h"
+#import "SlidingView.h"
 @interface OperationVC : UIViewController<swatchesDelegate,CBCentralManagerDelegate,UIAlertViewDelegate,UARTPeripheralDelegate,DelayListVCDelegate>{
     BOOL _timeout;
     
@@ -22,6 +23,10 @@
     
     MBProgressHUD *_hud;
     BOOL _isOperation[2];//用于判断延时定时是否开启
+    
+//    颜色按钮
+    UIButton *_colorBtn;
+    UIButton *_typeBtn;
 }
 @property(nonatomic,strong)DataStorage *dataStorage;
 @property UARTPeripheral *currentPeripheral;
