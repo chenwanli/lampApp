@@ -56,17 +56,17 @@
     [self.collectionView registerClass:[EquipmentCell class] forCellWithReuseIdentifier:@"EquipmentCell"];
     
     
-//    if (self.dataArray.count == 0) {
-//        _equipmentListLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight)];
-//        _equipmentListLabel.text = @"尚无添加设备\n请点击左上角按钮搜索周边设备进行添加";
-//        _equipmentListLabel.textAlignment = 1;
-//        _equipmentListLabel.textColor = [UIColor grayColor];
-//        _equipmentListLabel.numberOfLines = 0;
-//        [self.view addSubview:_equipmentListLabel];
-//    }
+    if (self.dataArray.count == 0) {
+        _equipmentListLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight)];
+        _equipmentListLabel.text = @"尚无添加设备\n请点击左上角按钮搜索周边设备进行添加";
+        _equipmentListLabel.textAlignment = 1;
+        _equipmentListLabel.textColor = [UIColor grayColor];
+        _equipmentListLabel.numberOfLines = 0;
+        [self.view addSubview:_equipmentListLabel];
+    }
     
-    OperationVC *operationVC = [[OperationVC alloc]init];
-    [self.navigationController pushViewController:operationVC animated:YES];
+//    OperationVC *operationVC = [[OperationVC alloc]init];
+//    [self.navigationController pushViewController:operationVC animated:YES];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section

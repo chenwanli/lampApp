@@ -17,6 +17,7 @@
 }
 @property(nonatomic,assign)float high;
 @property(nonatomic,strong)id <SlidingImgViewDelegate> delegate;
+- (id)initWithFrame:(CGRect)frame onRect:(CGRect)onRect;
 @end
 
 

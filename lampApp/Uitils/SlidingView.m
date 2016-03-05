@@ -13,6 +13,7 @@
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title{
     self = [super initWithFrame:frame];
     if (self) {
+        
         UILabel *lable = [[UILabel alloc]initWithFrame:CGRectMake(0, -30, 60, 20)];
         lable.text = title;
         lable.textAlignment = 1;
@@ -32,7 +33,7 @@
         _colorImgView.backgroundColor = RGB_A(27, 81, 173, 1);;
         [self addSubview:_colorImgView];
         
-        SlidingImgView *slidingImgView = [[SlidingImgView alloc]initWithFrame:CGRectMake((frame.size.width - 15) / 2, frame.size.height - 7.5, 15, 15)];
+        SlidingImgView *slidingImgView = [[SlidingImgView alloc]initWithFrame:CGRectMake((frame.size.width - 15) / 2, frame.size.height - 7.5, 15, 15) onRect:frame];
         slidingImgView.delegate = self;
         slidingImgView.high = frame.size.height;
         [self addSubview:slidingImgView];
@@ -68,7 +69,7 @@
 
 
 @implementation SlidingImgView
-- (id)initWithFrame:(CGRect)frame{
+- (id)initWithFrame:(CGRect)frame onRect:(CGRect)onRect{
     self = [super initWithFrame:frame];
     if (self){
         self.userInteractionEnabled = YES;
@@ -79,12 +80,12 @@
         _progressLable.textColor = RGB_A(137, 138, 142, 1);
         [self addSubview:_progressLable];
         
-        if (self.superview.frame.origin.x > 150) {
-            _progressLable.frame = CGRectMake(5,0, 35, 15);
-
-        }else{
+        if (onRect.origin.x > 150) {
             _progressLable.frame = CGRectMake(-40,0, 35, 15);
             _progressLable.textAlignment = 2;
+        }else{
+            _progressLable.frame = CGRectMake(20,0, 35, 15);
+            
         }
         
         self.image = [UIImage imageNamed:@"未标题-1"];

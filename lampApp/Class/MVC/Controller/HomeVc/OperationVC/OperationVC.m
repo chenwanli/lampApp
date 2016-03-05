@@ -64,10 +64,38 @@
     [downBtn addTarget:self action:@selector(downBtn:) forControlEvents:UIControlEventTouchUpInside];
     [swatchesImg addSubview:downBtn];
     
+//    进度条
+    SlidingView *slidingView;
+    if (kDeviceHeight < 490) {
+        slidingView = [[SlidingView alloc]initWithFrame:CGRectMake(0, 40, 60, 150) title:@"Brightne"];
+    }else{
+        slidingView = [[SlidingView alloc]initWithFrame:CGRectMake(0, 40, 60, 200) title:@"Brightne"];
+    }
+    [scrollView addSubview:slidingView];
+    slidingView.block = ^(Byte brightneSliderByte){
+        _operationData[0] = 0x00;
+        _operationData[1] = 0x00;
+        _operationData[2] = 0x00;
+        _operationData[3] = brightneSliderByte; //白
+        [self dataWrite];
+    };
+    
+    SlidingView *speedSlidingView = [[SlidingView alloc]initWithFrame:CGRectMake(kDeviceWidth - 60, 40, 60, slidingView.height) title:@"Speed"];
+    [scrollView addSubview:speedSlidingView];
+    speedSlidingView.block = ^(Byte speedSliderByte){
+        _operationData[4] = speedSliderByte;
+        [self dataWrite];
+    };
+    
+    
     float typeWidth = (kDeviceWidth - 55) / 4;
+    int all = 10;
+    if (kDeviceHeight < 490) {
+        all = 0;
+    }
     UIButton *colorBtn = nil;
     for (int i = 0; i < 4; i++) {
-        colorBtn = [UIButton cwlBtnType:UIButtonTypeRoundedRect rect:CGRectMake( 20 + i * (typeWidth + 5), swatchesImg.totalHeigth + 70, typeWidth,typeWidth) radius:0 title:nil titleColor:nil view:self.view];
+        colorBtn = [UIButton cwlBtnType:UIButtonTypeRoundedRect rect:CGRectMake( 20 + i * (typeWidth + 5), speedSlidingView.totalHeigth + 30 + all, typeWidth,typeWidth) radius:0 title:nil titleColor:nil view:self.view];
         [colorBtn setBackgroundImage:[UIImage imageNamed:@"设计图_17"] forState:UIControlStateNormal];
         [colorBtn setBackgroundImage:[UIImage imageNamed:@[@"大按钮状态红",@"大按钮状态绿",@"大按钮状态蓝",@"大按钮状态白"][i]] forState:UIControlStateSelected];
         [colorBtn setTitle:@"LIGHT" forState:UIControlStateNormal];
@@ -84,7 +112,7 @@
     
     typeWidth = (kDeviceWidth - 40) / 5;
     for (int i = 0; i < 5; i++) {
-        UIButton *typeBtn = [UIButton cwlBtnType:UIButtonTypeRoundedRect rect:CGRectMake(10 + i * (typeWidth + 5), colorBtn.totalHeigth + 10, typeWidth,typeWidth) radius:0 title:nil titleColor:[UIColor whiteColor] view:scrollView];
+        UIButton *typeBtn = [UIButton cwlBtnType:UIButtonTypeRoundedRect rect:CGRectMake(10 + i * (typeWidth + 5), colorBtn.totalHeigth + all, typeWidth,typeWidth) radius:0 title:nil titleColor:[UIColor whiteColor] view:scrollView];
         [typeBtn setBackgroundImage:[UIImage imageNamed:@"设计图_30"] forState:UIControlStateNormal];
         [typeBtn setBackgroundImage:[UIImage imageNamed:@"小按钮状态2"] forState:UIControlStateSelected];
         [typeBtn setTitle:@[@"闪烁",@"渐变",@"任性\n闪耀",@"任性\n渐变",@"彩虹"][i] forState:UIControlStateNormal];
@@ -99,26 +127,11 @@
         }
     }
 
-    SlidingView *slidingView = [[SlidingView alloc]initWithFrame:CGRectMake(0, 40, 60, 200) title:@"Brightne"];
-    [scrollView addSubview:slidingView];
-    slidingView.block = ^(Byte brightneSliderByte){
-        _operationData[0] = 0x00;
-        _operationData[1] = 0x00;
-        _operationData[2] = 0x00;
-        _operationData[3] = brightneSliderByte; //白
-        [self dataWrite];
-    };
-
-    SlidingView *speedSlidingView = [[SlidingView alloc]initWithFrame:CGRectMake(kDeviceWidth - 60, 40, 60, 200) title:@"Speed"];
-    [scrollView addSubview:speedSlidingView];
-    speedSlidingView.block = ^(Byte speedSliderByte){
-        _operationData[4] = speedSliderByte;
-        [self dataWrite];
-    };
+    
     
     for (int i = 0; i < 2; i++) {
         UIButton *barBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        barBtn.frame = CGRectMake(i * kDeviceWidth / 2, kDeviceHeight - 80, kDeviceWidth / 2, 80);
+        barBtn.frame = CGRectMake(i * kDeviceWidth / 2, kDeviceHeight - 70, kDeviceWidth / 2, 70);
 //        [barBtn setTitle:@[@"定时任务",@"延时任务"][i] forState:UIControlStateNormal];
         [barBtn setImage:[UIImage imageNamed:@[@"底部2",@"底部1"][i]] forState:UIControlStateNormal];
         [barBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -283,7 +296,7 @@ void bdAddrLow2Str(int data,UInt8 *brakdata, UInt8 *datalong)
         _operationData[3] = 0x00;
         _operationData[5] = 0x00;
         
-        _operationData[sender.tag - 4] = 0xff;
+        _operationData[sender.tag - 5] = 0xff;
     }
     [self dataWrite];
     
