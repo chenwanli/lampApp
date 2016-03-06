@@ -87,9 +87,9 @@
     UITouch *touch = [allTouches anyObject];   //视图中的所有对象
     CGPoint point = [touch locationInView:[touch view]]; //返回触摸点在视图中的当前坐标
     
-    Byte *colorByte = [self getHexStringByColor:[self getPixelColorAtLocation:point]];
+    NSData *colorData = [self getHexStringByColor:[self getPixelColorAtLocation:point]];
     
-    [self.delegate swatchesDelegateByte:colorByte];
+    [self.delegate swatchesDelegateData:colorData];
     
 //    [self.delegate bgColor:[self getPixelColorAtLocation:point]];
 }
@@ -184,7 +184,7 @@
 }
 
 
-- (Byte *)getHexStringByColor:(UIColor *)originColor{
+- (NSData *)getHexStringByColor:(UIColor *)originColor{
     NSDictionary *colorDic = [self getRGBDictionaryByColor:originColor];
     int r = [colorDic[@"R"] floatValue] * 255;
     int g = [colorDic[@"G"] floatValue] * 255;
@@ -195,7 +195,9 @@
     colorByte[1] = [DataObject cwlByte:g];
     colorByte[2] = [DataObject cwlByte:b];
     
-    return colorByte;
+    NSData *data =[[NSData alloc] initWithBytes:colorByte length:3];
+    
+    return data;
 }
 
 

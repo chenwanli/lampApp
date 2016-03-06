@@ -22,7 +22,7 @@
 
 @protocol swatchesDelegate <NSObject>
 
-- (void)swatchesDelegateByte:(Byte *)byte;
+- (void)swatchesDelegateData:(NSData *)data;
 @end
 @interface SwatchesImg : UIImageView{
     float _columnWidth;

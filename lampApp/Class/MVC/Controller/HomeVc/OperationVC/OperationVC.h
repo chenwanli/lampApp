@@ -27,6 +27,8 @@
 //    颜色按钮
     UIButton *_colorBtn;
     UIButton *_typeBtn;
+//    开关按钮
+    UIButton *_downBtn;
 }
 @property(nonatomic,strong)DataStorage *dataStorage;
 @property UARTPeripheral *currentPeripheral;

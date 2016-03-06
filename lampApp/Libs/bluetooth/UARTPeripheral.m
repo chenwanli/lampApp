@@ -179,10 +179,10 @@
     [macString appendString:[[value substringWithRange:NSMakeRange(1, 2)] uppercaseString]];
     
     
-    NSLog(@"蓝牙地址   -------------------  %@ -------- %@",macString,str);
+//    NSLog(@"蓝牙地址   -------------------  %@ -------- %@",macString,str);
     
     [self delegateNubmerData:characteristic.value block:^(UInt16 dataBytes, NSInteger type) {
-        NSLog(@"协议 %ld    %x",(long)type,dataBytes);
+//        NSLog(@"协议 %ld    %x",(long)type,dataBytes);
         [self.delegate didReutunDataByte:dataBytes type:type];
     }];
     
@@ -207,7 +207,7 @@
         }
     }
     
-    NSLog(@"返回数据------%@",data);
+//    NSLog(@"返回数据------%@",data);
     
     UInt16 frameHeader1 = frameHeaderByte[0] * 256;
     UInt16 frameHeader2 = frameHeader1 + frameHeaderByte[1];

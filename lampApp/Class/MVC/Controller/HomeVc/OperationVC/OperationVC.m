@@ -55,14 +55,14 @@
     swatchesImg.delegate = self;
     [scrollView addSubview:swatchesImg];
     
-    UIButton *downBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    downBtn.layer.cornerRadius = 30;
-    downBtn.layer.masksToBounds = YES;
-    downBtn.frame = CGRectMake((swatchesImg.width - 60) / 2, (swatchesImg.width - 60) / 2, 60, 60);
-    [downBtn setBackgroundImage:[UIImage imageNamed:@"中间按钮1"] forState:UIControlStateNormal];
-    [downBtn setBackgroundImage:[UIImage imageNamed:@"中间按钮2"] forState:UIControlStateSelected];
-    [downBtn addTarget:self action:@selector(downBtn:) forControlEvents:UIControlEventTouchUpInside];
-    [swatchesImg addSubview:downBtn];
+    _downBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    _downBtn.layer.cornerRadius = 30;
+    _downBtn.layer.masksToBounds = YES;
+    _downBtn.frame = CGRectMake((swatchesImg.width - 60) / 2, (swatchesImg.width - 60) / 2, 60, 60);
+    [_downBtn setBackgroundImage:[UIImage imageNamed:@"中间按钮1"] forState:UIControlStateNormal];
+    [_downBtn setBackgroundImage:[UIImage imageNamed:@"中间按钮2"] forState:UIControlStateSelected];
+    [_downBtn addTarget:self action:@selector(downBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [swatchesImg addSubview:_downBtn];
     
 //    进度条
     SlidingView *slidingView;
@@ -101,7 +101,7 @@
         [colorBtn setTitle:@"LIGHT" forState:UIControlStateNormal];
         [colorBtn setTitleColor:@[[UIColor redColor],[UIColor greenColor],[UIColor blueColor],[UIColor whiteColor]][i] forState:UIControlStateNormal];
         [colorBtn setTitleColor:@[[UIColor redColor],[UIColor greenColor],[UIColor blueColor],[UIColor whiteColor]][i] forState:UIControlStateSelected];
-        colorBtn.tag = i + 5;
+        colorBtn.tag = i + 100;
         [colorBtn addTarget:self action:@selector(colorBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:colorBtn];
         
@@ -118,7 +118,7 @@
         [typeBtn setTitle:@[@"渐变",@"闪烁",@"任性\n闪耀",@"任性\n渐变",@"彩虹"][i] forState:UIControlStateNormal];
         [typeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
         typeBtn.titleLabel.numberOfLines = 2;
-        typeBtn.tag = i;
+        typeBtn.tag = i + 104;
         [typeBtn addTarget:self action:@selector(colorBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [scrollView addSubview:typeBtn];
         
@@ -144,6 +144,7 @@
     }
 }
 
+#pragma mark - 开关按钮
 - (void)downBtn:(UIButton *)button{
     button.selected = !button.selected;
     if (button.selected) {
@@ -151,9 +152,67 @@
         _operationData[1] = 0x00;
         _operationData[2] = 0x00;
         _operationData[3] = 0x00;
+        _operationData[5] = 0x00;
+        
+        _colorBtn.selected = NO;
+        _typeBtn.selected = NO;
     }else{
+        [self colorBtnClick:[self.view viewWithTag:103]];
         _operationData[3] = 0xff;
     }
+    [self dataWrite];
+}
+
+/*
+ 0.闪耀、1.渐变、2.任性闪耀、3.任性渐变、4.红色、5.绿色、6.蓝色、7.白色、、
+ */
+- (void)colorBtnClick:(UIButton *)sender{
+    if(sender.tag < 104){ //颜色
+        _colorBtn.selected = NO;
+        _colorBtn = sender;
+        _operationData[0] = 0x00;
+        _operationData[1] = 0x00;
+        _operationData[2] = 0x00;
+        _operationData[3] = 0x00;
+        _operationData[sender.tag - 100] = 0xff;
+        
+        
+        if(_typeBtn != [self.view viewWithTag:104]){
+            [self colorBtnClick:[self.view viewWithTag:104]];
+        }else if (_typeBtn != [self.view viewWithTag:105]){
+            [self colorBtnClick:[self.view viewWithTag:104]];
+        }
+        
+    }else{ //模式
+        _typeBtn.selected = NO;
+        _typeBtn = sender;
+        
+        _operationData[5] = [DataObject cwlByte:sender.tag - 104];
+   
+        
+        if (sender.tag == 104 || sender.tag == 105) {
+            
+        }else{
+            _operationData[0] = 0x00;
+            _operationData[1] = 0x00;
+            _operationData[2] = 0x00;
+            _operationData[3] = 0x00;
+            _colorBtn.selected = NO;
+        }
+    }
+    sender.selected = YES;
+    [self dataWrite];
+}
+
+#pragma mark - 颜色协议
+- (void)swatchesDelegateData:(NSData *)data{
+    const uint8_t *bytes = data.bytes;
+    _downBtn.selected = NO;
+    _colorBtn.selected = NO;
+    _operationData[0] = bytes[0];
+    _operationData[1] = bytes[1];
+    _operationData[2] = bytes[2];
+    
     [self dataWrite];
 }
 
@@ -268,50 +327,12 @@ void bdAddrLow2Str(int data,UInt8 *brakdata, UInt8 *datalong)
 - (void)timeout{
     if (!_timeout) {
         [_hud hide:YES];
-        [CWLAlert alertTitle:nil message:@"链接超时" titleBtn:nil otherBtn:@"确定" VC:self];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"链接超时" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles: nil];
+        [alert show];
+        [alert dismissWithClickedButtonIndex:2 animated:YES];
     }
 }
-/*
- 0.闪耀
- 1.渐变
- 2.任性闪耀
- 3.任性渐变
- 4.红色
- 5.绿色
- 6.蓝色
- 7.白色
- */
-- (void)colorBtnClick:(UIButton *)sender{
-    if(sender.tag < 5){
-        _colorBtn.selected = NO;
-        _colorBtn = sender;
-        sender.selected = YES;
-        
-        _operationData[5] = [DataObject cwlByte:sender.tag];
-    }else{
-        _typeBtn.selected = NO;
-        _typeBtn = sender;
-        sender.selected = YES;
-        
-        _operationData[0] = 0x00;
-        _operationData[1] = 0x00;
-        _operationData[2] = 0x00;
-        _operationData[3] = 0x00;
-        _operationData[5] = 0x00;
-        
-        _operationData[sender.tag - 5] = 0xff;
-    }
-    [self dataWrite];
-}
 
-
-#pragma mark - 颜色协议
-- (void)swatchesDelegateByte:(Byte *)byte{
-    _operationData[0] = byte[0];
-    _operationData[1] = byte[1];
-    _operationData[2] = byte[2];
-    [self dataWrite];
-}
 
 #pragma mark - 数据发送
 - (void)dataWrite{
@@ -341,7 +362,10 @@ void bdAddrLow2Str(int data,UInt8 *brakdata, UInt8 *datalong)
         NSLog(@"协议二 可以进行操作了");
         _dataRandom = dataRandom;
         [_hud hide:YES];
-        [CWLAlert alertTitle:nil message:@"链接成功" titleBtn:nil otherBtn:@"确定" VC:self];return;
+//        [CWLAlert alertTitle:nil message:@"链接成功" titleBtn:nil otherBtn:@"确定" VC:self];return;
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"链接成功" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles: nil];
+        [alert show];
+        [alert dismissWithClickedButtonIndex:2 animated:YES];
     }
 }
 
