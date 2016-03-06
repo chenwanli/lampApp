@@ -212,6 +212,12 @@
     _operationData[0] = bytes[0];
     _operationData[1] = bytes[1];
     _operationData[2] = bytes[2];
+    _operationData[3] = 0x00;
+    if(_typeBtn != [self.view viewWithTag:104]){
+        [self colorBtnClick:[self.view viewWithTag:104]];
+    }else if (_typeBtn != [self.view viewWithTag:105]){
+        [self colorBtnClick:[self.view viewWithTag:104]];
+    }
     
     [self dataWrite];
 }
