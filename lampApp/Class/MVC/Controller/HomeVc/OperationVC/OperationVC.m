@@ -115,7 +115,7 @@
         UIButton *typeBtn = [UIButton cwlBtnType:UIButtonTypeRoundedRect rect:CGRectMake(10 + i * (typeWidth + 5), colorBtn.totalHeigth + all, typeWidth,typeWidth) radius:0 title:nil titleColor:[UIColor whiteColor] view:scrollView];
         [typeBtn setBackgroundImage:[UIImage imageNamed:@"设计图_30"] forState:UIControlStateNormal];
         [typeBtn setBackgroundImage:[UIImage imageNamed:@"小按钮状态2"] forState:UIControlStateSelected];
-        [typeBtn setTitle:@[@"闪烁",@"渐变",@"任性\n闪耀",@"任性\n渐变",@"彩虹"][i] forState:UIControlStateNormal];
+        [typeBtn setTitle:@[@"渐变",@"闪烁",@"任性\n闪耀",@"任性\n渐变",@"彩虹"][i] forState:UIControlStateNormal];
         [typeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
         typeBtn.titleLabel.numberOfLines = 2;
         typeBtn.tag = i;
@@ -147,6 +147,9 @@
 - (void)downBtn:(UIButton *)button{
     button.selected = !button.selected;
     if (button.selected) {
+        _operationData[0] = 0x00;
+        _operationData[1] = 0x00;
+        _operationData[2] = 0x00;
         _operationData[3] = 0x00;
     }else{
         _operationData[3] = 0xff;
@@ -299,7 +302,6 @@ void bdAddrLow2Str(int data,UInt8 *brakdata, UInt8 *datalong)
         _operationData[sender.tag - 5] = 0xff;
     }
     [self dataWrite];
-    
 }
 
 
